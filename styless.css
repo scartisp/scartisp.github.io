@@ -1,17 +1,18 @@
      body{
       background: blue;
-    font-family: Helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     }
 h1 {
 color: pink;
 text-align: center;
 }
-assign{
+.assign {
 display: flex;
 padding: 10px;
 margin: 10px;
 background: green;
 }
-assign img{
+.assign img {
 width: 200 px;
 padding: 10px;
+}
