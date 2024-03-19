@@ -4,7 +4,7 @@
     }
 h1 {
 color: pink;
-text align: center;
+text-align: center;
 }
 assign{
 display: flex;
