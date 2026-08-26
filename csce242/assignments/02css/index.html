@@ -1,3 +1,4 @@
+<!--Written by Simion Cartis-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +6,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Assignment</title>
+  <!--fonts used (retrieved from google fonts)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!--stylesheet-->
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <header>
-    <h1>This Page Has Fake Latin and Food</h1>
+    <h1 class="headings">This Page Has Fake Latin and Food</h1>
   </header>
   <main>
-    <h2>It looks like an illiterate Roman's grocery list</h2>
-    <div>
+    <img src="./images/colosseum.jpg" id="colesseum-image">
+    <h2 class="headings">It Looks Like an Illiterate Roman's Grocery List</h2>
+    <div id="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla quam ante, vitae tincidunt mi sodales
         a.
         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ut nulla fringilla
@@ -24,49 +34,47 @@
         imperdiet
         blandit mi. Vestibulum sagittis viverra erat et consequat. Quisque eget gravida nunc. Integer consequat nisi a
         neque efficitur, sed aliquam sapien auctor.</p>
-      <div id="image-div">
-        <img>
-        <img>
-      </div>
       <p>Food ipsum dolor amet beet greens beets cauliflower shrimp. Shrimp broccoli kale seaweed swiss chard,
         watercress
         onions radicchio eggplant spices radish mushrooms bok choy mustard greens. Chives sweet potato garlic, brussels
         sprouts oregano beet greens carrots dandelion greens lettuce potatoes. Oregano endive mushrooms radicchio bok
         choy
         mustard greens water chestnut.</p>
-
-      <table>
-        <tr>
-          <th>Lorem</th>
-          <th>Ipsum</th>
-          <th>Dolor</th>
-        </tr>
-        <tr>
-          <td>ipsum dolor</td>
-          <td>broccoli kale seaweed </td>
-          <td>Sed magna mi</td>
-        </tr>
-        <tr>
-          <td>ridiculus mus</td>
-          <td>eros quis</td>
-          <td>mustard greens</td>
-        </tr>
-        <tr>
-          <td>amet beet greens</td>
-          <td>eggplant spices radish</td>
-          <td>sed aliquam</td>
-        </tr>
-        <tr>
-          <td>ipsum dolor amet</td>
-          <td>mushrooms bok</td>
-          <td>Shrimp broccoli</td>
-        </tr>
-        <tr>
-          <td>amet</td>
-          <td>Quisque ut mi</td>
-          <td>water chestnut</td>
-        </tr>
-      </table>
+      <div id="bottom-section">
+        <img src="./images/some-guys-head.jpg">
+        <table id="table-id">
+          <tr id="table-header">
+            <th>Lorem</th>
+            <th>Ipsum</th>
+            <th>Dolor</th>
+          </tr>
+          <tr>
+            <td>ipsum dolor</td>
+            <td>broccoli kale seaweed </td>
+            <td>Sed magna mi</td>
+          </tr>
+          <tr>
+            <td>ridiculus mus</td>
+            <td>eros quis</td>
+            <td>mustard greens</td>
+          </tr>
+          <tr>
+            <td>amet beet greens</td>
+            <td>eggplant spices radish</td>
+            <td>sed aliquam</td>
+          </tr>
+          <tr>
+            <td>ipsum dolor amet</td>
+            <td>mushrooms bok</td>
+            <td>Shrimp broccoli</td>
+          </tr>
+          <tr>
+            <td>amet</td>
+            <td>Quisque ut mi</td>
+            <td>water chestnut</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </main>
 

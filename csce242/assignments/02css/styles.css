@@ -1,0 +1,44 @@
+/*Written by: Simion Cartis*/
+
+/*Structural*/
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+#colesseum-image {
+  display: block;
+  margin: auto;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#bottom-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+#table-id {
+  width:fit-content;
+  margin: auto;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 12px 5px;
+}
+
+/*typography*/
+.headings {
+  font-family: "Gideon Roman", serif;
+}
+
+#content {
+  font-family: "Tinos", serif;
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+}
