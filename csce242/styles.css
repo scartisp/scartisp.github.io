@@ -1,0 +1,53 @@
+/*Written by: Simion Cartis*/
+
+
+/*Structural*/
+
+#content {
+  margin: auto;
+  padding: 2rem;
+  width: 70%;
+  border-radius: 8px;
+  background: rgba(130,200,229, .6);
+}
+
+header {
+  text-align: center;
+  font-family: "Martel", serif;
+}
+
+/*typography*/
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Martel", serif;
+  text-align: center;
+  font-size:3.5rem;
+}
+
+p {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 1.25rem;
+}
+
+#assignment-div {
+  background: rgba(137,137,137, .5);
+  border-radius: 8px;
+}
+
+#assignments-header{
+  margin-bottom: 1rem;
+}
+
+#list-of-links { 
+  text-align: center;
+  list-style-position: inside;
+}
+#list-of-links a {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 240);
+}
