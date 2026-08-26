@@ -17,6 +17,7 @@ header {
   color: rgb(234, 102, 14);
 }
 
+
 /*typography*/
 
 h1 {
@@ -37,7 +38,7 @@ p {
 }
 
 #assignment-div {
-  background: rgba(137, 137, 137, .5);
+  background: rgba(137, 137, 137, .5); /*to contrast sections*/
   border-radius: 8px;
   padding-block: .25rem;
 }
@@ -53,7 +54,7 @@ p {
   list-style-position: inside;
 }
 
-#list-of-links a {
+#list-of-links a { /*ensure links have same size and font as p elements*/
   font-family: "IBM Plex Sans Hebrew", sans-serif;
   text-decoration: none;
   font-size: 1.25rem;

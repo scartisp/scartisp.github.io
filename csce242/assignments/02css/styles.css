@@ -2,6 +2,8 @@
 
 
 /*Structural*/
+
+/*Div for the contents of the page*/
 #content {
   margin: auto;
   background: rgba(198, 90, 58, .5);
@@ -48,7 +50,9 @@ h2 {
   border-spacing: 12px 5px;
 }
 
+
 /*typography*/
+
 .headings {
   font-family: "Gideon Roman", serif;
 }
@@ -60,6 +64,6 @@ body {
 #text-div {
   font-family: "Tinos", serif;
   font-size: 1.5rem;
-  font-weight: 450;
+  font-weight: 450; /*make a bit bolder for visibility against background image*/
   margin: auto;
 }
