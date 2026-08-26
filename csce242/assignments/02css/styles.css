@@ -1,4 +1,15 @@
 /*Written by: Simion Cartis*/
+#background-color {
+  
+}
+
+#content {
+  margin: auto;
+  background: rgba(198, 90, 58, .45);
+  width: 70%;
+  height: 100%;
+  padding: 2rem;
+}
 
 /*Structural*/
 h1 {
@@ -20,7 +31,6 @@ h2 {
 #bottom-section {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
 }
 
 #table-id {
@@ -35,10 +45,14 @@ h2 {
 .headings {
   font-family: "Gideon Roman", serif;
 }
+body {
+  background-image: url(./images/background.avif);
+  margin: 0;
+}
 
-#content {
+
+#text {
   font-family: "Tinos", serif;
   font-size: 1.5rem;
-  width: 70%;
   margin: auto;
 }
