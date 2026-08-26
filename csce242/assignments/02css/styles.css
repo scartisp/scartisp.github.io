@@ -1,13 +1,9 @@
 /*Written by: Simion Cartis*/
-#background-color {
-  
-}
 
 #content {
   margin: auto;
   background: rgba(198, 90, 58, .45);
   width: 70%;
-  height: 100%;
   padding: 2rem;
 }
 
@@ -20,6 +16,7 @@ h1 {
 #colesseum-image {
   display: block;
   margin: auto;
+  border: 5px solid #1F3A5F;
 }
 
 h2 {
@@ -33,11 +30,16 @@ h2 {
   justify-content: space-around;
 }
 
+#some-guys-head-image {
+  border: 5px solid #D4AF37;
+}
+
 #table-id {
   width:fit-content;
   margin: auto;
   text-align: center;
   border-collapse: separate;
+  border: 5px solid #D4AF37;
   border-spacing: 12px 5px;
 }
 
@@ -49,7 +51,6 @@ body {
   background-image: url(./images/background.avif);
   margin: 0;
 }
-
 
 #text {
   font-family: "Tinos", serif;
