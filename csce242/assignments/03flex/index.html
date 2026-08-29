@@ -14,7 +14,7 @@
     <header id="main-header">
       <h1>Layout With Flex</h1>
       <nav id="main-nav">
-        <ul id="main-link-ul">
+        <ul id="main-link-ul" class="columns">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Staff</a></li>
@@ -22,17 +22,34 @@
         </ul>
       </nav>
     </header>
-    <aside id="main-aside">
-      <h2>Sidebar</h2>
-      <nav id="sidebar">
-        <ul id="sidebar-ul">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <div class="columns">
+      <aside id="main-aside" class="one">
+        <h2>Sidebar</h2>
+        <nav id="sidebar">
+          <ul id="sidebar-ul">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div id="image-div" class="columns four">
+        <div class="one">
+          <h3>Title 1</h3>
+          <img src="https://dummyimage.com/500x400/c6593a/fff">
+        </div>
+        <div class="one">
+          <h3>Title 2</h3>
+          <img src="https://dummyimage.com/500x400/c6593a/fff">
+        </div>
+        <div class="one">
+          <h3>Title 3</h3>
+          <img src="https://dummyimage.com/500x400/c6593a/fff">
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 
