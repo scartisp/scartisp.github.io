@@ -5,6 +5,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgb(222, 198, 170);
   margin: 0;
+  color: rgb(72, 63, 53);
 }
 
 #content {
@@ -70,6 +71,7 @@ body {
   text-align: center;
   margin: 0;
   font-size: 1.75rem;
+  padding-top: 5px;
 }
 
 /* responsive design */
