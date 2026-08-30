@@ -131,6 +131,7 @@ body {
 
 .text-with-image h3 {
   margin-bottom: 0;
+  font-size: 1.75rem;
 }
 
 .main-text {
@@ -161,7 +162,6 @@ body {
 
   #sidebar-ul li {
     padding: 10px;
-    background-color: beige;
   }
 
   #sidebar a {
