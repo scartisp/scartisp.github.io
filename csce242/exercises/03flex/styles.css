@@ -6,12 +6,21 @@ body {
 }
 
 #content {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 #main-header {
   background-color: bisque;
+  padding-top: 3%;
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+
 }
 
 #sidebar {
@@ -34,7 +43,7 @@ body {
 
 #main-nav li {
   background-color: darkslateblue;
-  padding: 5px;
+  padding: 20px;
   border-bottom: 1px solid white;
 }
 
@@ -55,6 +64,11 @@ body {
   .columns {
     display: flex;
   }
+
+#content {
+  width: 80%;
+  margin: auto;
+}
 
   #main-nav li {
     flex: 1;
