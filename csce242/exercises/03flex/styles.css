@@ -20,14 +20,43 @@ body {
   position: absolute;
   left: 1em;
   top: 1em;
+}
 
+#hero {
+  position: relative;
+}
+
+#hero-description {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 22%;
+  font-size: 12em;
+  color: white;
+  text-decoration: none;
+}
+
+#hero-arrow-right {
+  right: 2%;
+}
+
+#hero-arrow-left {
+  left: 2%;
 }
 
 #sidebar {
   background-color: aliceblue;
 }
 
-#sidebar, #info {
+#sidebar,
+#info {
   padding: 5px;
 }
 
@@ -36,7 +65,9 @@ body {
 }
 
 /*navigation*/
-#main-nav ul, #quick-links {
+#main-nav ul,
+#quick-links,
+#login-nav ul {
   list-style-type: none;
   padding-left: 0;
 }
@@ -45,6 +76,26 @@ body {
   background-color: darkslateblue;
   padding: 20px;
   border-bottom: 1px solid white;
+}
+
+#login-nav {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+#login-nav a {
+  color: #c06c84;
+  text-decoration: none;
+}
+
+#login-nav li:not(:last-child):not(:first-child)::after {
+  content: ' | ';
+  color: #c06c84;
+}
+
+#login-nav li {
+  display: inline-block;
 }
 
 #main-nav a {
@@ -65,10 +116,10 @@ body {
     display: flex;
   }
 
-#content {
-  width: 80%;
-  margin: auto;
-}
+  #content {
+    width: 80%;
+    margin: auto;
+  }
 
   #main-nav li {
     flex: 1;
