@@ -13,24 +13,26 @@
 </head>
 
 <body>
+<!--TODO literally all the names are bad and need to be changed-->
+  <button id="skip-button">Skip to Main Content</button>
   <header id="main-header">
     <div>
       <nav id="main-header-tools">
-        <ul id="main-header-tools-ul">
-          <li><a href="#">Calender</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">Directory</a></li>
-          <li><a href="#">Apply</a></li>
-          <li><a href="#">Give</a></li>
+        <ul class="unorder-list" id="main-header-tools-ul">
+          <li><a href="#">CALENDAR</a></li>
+          <li><a href="#">MAP</a></li>
+          <li><a href="#">DIRECTORY</a></li>
+          <li><a href="#">APPLY</a></li>
+          <li><a href="#">GIVE</a></li>
           <li>
             <div class="dropdown">
               <div class="dropdown-flex">
-                <a id="dropdown-trigger">Gateways ></a>
-                <ul id="main-header-dropdown">
-                  <li><a href="#">Students</a></li>
-                  <li><a href="#">Faculty & Staff</a></li>
-                  <li><a href="#">Parents & Family</a></li>
-                  <li><a href="#">Alumni</a></li>
+                <a id="dropdown-trigger">GATEWAYS ></a>
+                <ul class="unorder-list" id="main-header-dropdown">
+                  <li><a href="#">STUDENTS</a></li>
+                  <li><a href="#">FACULTY & STAFF</a></li>
+                  <li><a href="#">PARENTS & FAMILIES</a></li>
+                  <li><a href="#">ALUMNI</a></li>
                 </ul>
               </div>
             </div>
@@ -41,22 +43,37 @@
     <div id="main-header-div">
       <div id="title-header-div">
         <img src="https://dummyimage.com/250x50/75000a/fff">
-        <p>Floyd School of Medicine</p>
+        <p class="text">Floyd School of Medicine</p>
       </div>
-      <nav id="main-header-nav">
-        <ul>
-          <li> <a href="#">Education <span class="material-symbols-outlined">
-                keyboard_arrow_down
-              </span></a></li>
-          <li> <a href="#">Research <span class="material-symbols-outlined">
-                keyboard_arrow_down
-              </span></a></li>
-            <li> <a href="#">About <span class="material-symbols-outlined">
-                keyboard_arrow_down
-              </span></a></li>
-        </ul>
-      </nav>
     </div>
+    <nav id="main-header-nav">
+      <ul class="unorder-list" id="main-nav">
+        <li>
+          <button>EDUCATION <span class="material-symbols-outlined">
+              keyboard_arrow_down
+            </span></button>
+        </li>
+        <li>
+          <button>RESEARCH <span class="material-symbols-outlined">
+              keyboard_arrow_down
+            </span></button>
+        </li>
+        <li>
+          <button>CENTERS AND INSTITUTIONS <span class="material-symbols-outlined">
+              keyboard_arrow_down
+            </span></button>
+        </li>
+        <li>
+          <button>ABOUT <span class="material-symbols-outlined">
+              keyboard_arrow_down
+            </span></button>
+        </li>
+        <li>
+          <button><img src="./images/manage-search.png"></button>
+        </li>
+
+      </ul>
+    </nav>
 
   </header>
 </body>

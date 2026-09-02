@@ -1,22 +1,41 @@
 /*Structure*/
 
+body {
+  margin: 0;
+}
+
+body img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#skip-button {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border: none;
+  background-color: #75000a;
+  color: white;
+  font-size: 15px;
+  padding: 20px 30px 20px 30px;
+  font-weight: 600;
+}
+
 #main-header {
   background: black;
 }
 
-#main-header-div {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+#main-header-tools, #main-header-div {
+  padding: 5px 20% 0 20%;  
 }
 
 #title-header-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
   color: white;
+  font-size: 2.25rem;
+  font-weight: 600;
 }
 
 /*Navigation*/
@@ -29,14 +48,13 @@
   align-items: center;
 }
 
-#main-header-tools-ul,
-#main-header-dropdown {
-  display: flex;
-  flex-direction: row;
+#main-header-tools-ul {
+  padding-left: 0;
 }
 
 #main-header-tools-ul li a,
-#main-header-dropdown a {
+#main-header-dropdown a,
+#main-header-nav a {
   color: white;
   text-decoration: none;
   gap: 10px;
@@ -79,12 +97,41 @@
   padding-left: 15px;
 }
 
-#main-header-nav ul {
+#main-header-nav {
+  position: relative;
+  width: 100%;
+  background: #75000a;
+}
+
+#main-nav {
+  width: fit-content;
+  margin-left: auto;
+  padding-right: 22%;
+  padding-top: 10px;
+  gap: 20px;
   color: white;
+
 }
 
 /*typography*/
 
+.text {
+  margin: 0;
+}
 
+.unorder-list {
+  display: flex;
+  flex-direction: row;
+}
+
+#main-nav button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: #75000a;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
 
 /*Responsive Design*/
