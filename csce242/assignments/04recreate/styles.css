@@ -70,6 +70,7 @@ body img {
 #connect-buttons-ul {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
   list-style: none;
   gap: 40px;
 }
@@ -218,7 +219,7 @@ body img {
 
 .connect-col:not(:last-child) {
   border-right: black 1px solid;
-  padding-right: 120px;
+  padding-right: clamp(20px, 8vw, 120px)
 }
 
 #connect-body h3 {
@@ -238,14 +239,19 @@ body img {
 
 
 #connect-links ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3,auto);
+  gap: 10px 75px;
   list-style: none;
   margin: 0;
+  padding-left: 0;
   color: #75000a;
   font-size: 15px;
   font-weight: 600;
 }
 
-#connect-links ul:first-child {
+/* #connect-links ul:first-child {
   padding-left: 0;
 }
 
@@ -255,7 +261,7 @@ body img {
 
 #connect-links li:not(:last-child) {
   margin-bottom: 10px;
-}
+} */
 
 #connect-address {
   max-width: 210px;
@@ -288,8 +294,16 @@ body img {
   }
 }
 
-@media (max-width: 1022px) {
+@media ( 1022px <= width <= 1480px) {
+  #socials {
+    flex-direction: column;
+  }
+  #socials button {
+    margin-bottom: 10px;
+  }
+}
 
+@media (max-width: 1022px) {
   #main-header-tools,
   #main-header-nav {
     display: none;
@@ -311,4 +325,27 @@ body img {
     align-items: flex-start;
     padding-top: 10px;
   }
+
+  #connect-body {
+    flex-direction: column;
+  }
+  #connect-body h3 {
+    justify-self: center;
+  }
+
+  .connect-col:not(:last-child) {
+  border-right: none;
+  padding-right: 0;
+  border-bottom: black 1px solid;
+}
+
+#connect-links ul{
+  grid-template-rows: repeat(2,auto);
+}
+
+#connect-address {
+  max-width: none;
+  text-align: center;
+}
+
 }
