@@ -1,0 +1,90 @@
+/*Structure*/
+
+#main-header {
+  background: black;
+}
+
+#main-header-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#title-header-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+
+/*Navigation*/
+
+#main-header ul {
+  list-style: none;
+}
+
+#main-header-tools {
+  align-items: center;
+}
+
+#main-header-tools-ul,
+#main-header-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+#main-header-tools-ul li a,
+#main-header-dropdown a {
+  color: white;
+  text-decoration: none;
+  gap: 10px;
+}
+
+#main-header-tools-ul,
+#main-header-dropdown {
+  gap: 5px;
+}
+
+#dropdown-trigger:hover {
+  cursor: pointer;
+}
+
+#dropdown-trigger:hover+#main-header-dropdown {
+  display: flex;
+}
+
+#main-header-tools-ul li:not(:last-child)::after,
+#main-header-dropdown li:not(:last-child)::after {
+  content: ' |';
+  color: white;
+}
+
+#main-header-dropdown {
+  display: none;
+}
+
+#main-header-dropdown:hover {
+  display: flex;
+}
+
+.dropdown-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown-flex ul {
+  padding-left: 15px;
+}
+
+#main-header-nav ul {
+  color: white;
+}
+
+/*typography*/
+
+
+
+/*Responsive Design*/

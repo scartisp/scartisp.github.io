@@ -47,6 +47,10 @@ header {
   flex: 6;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*typography*/
 
 header h1 {
