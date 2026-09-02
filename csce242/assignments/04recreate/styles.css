@@ -44,6 +44,55 @@ body img {
   display: none;
 }
 
+#connect-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EDEDED;
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+#connect-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+}
+
+#connect-body {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#connect-buttons-ul {
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  gap: 40px;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#social-ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+}
+
+#connect-links {
+  display: flex;
+  flex-direction: row;
+}
+
 /*Navigation*/
 
 #main-header ul {
@@ -120,7 +169,6 @@ body img {
   color: white;
 }
 
-
 /*typography*/
 
 .text {
@@ -145,6 +193,83 @@ body img {
 #hamburger-eyeglass-img {
   position: relative;
   top: -5px
+}
+
+#connect-header h2 {
+  color: #75000a;
+  font-size: 4rem;
+  font-weight: 1000;
+  margin: 0;
+}
+
+#connect-header p {
+  font-size: 18px;
+  font-weight: 525;
+}
+
+#connect-buttons-ul button {
+  font-size: 15px;
+  color: white;
+  background-color: #75000a;
+  border: white 3px solid;
+  padding: 15px 15px;
+  font-weight: 700;
+}
+
+.connect-col:not(:last-child) {
+  border-right: black 1px solid;
+  padding-right: 120px;
+}
+
+#connect-body h3 {
+  color: #75000a;
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#socials button {
+  color: white;
+  font-weight: 700;
+  background-color: black;
+  border: white 3px solid;
+  padding: 10px 15px;
+}
+
+
+#connect-links ul {
+  list-style: none;
+  margin: 0;
+  color: #75000a;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#connect-links ul:first-child {
+  padding-left: 0;
+}
+
+#connect-links ul:last-child {
+  padding-left: 75px;
+}
+
+#connect-links li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#connect-address {
+  max-width: 210px;
+  height: auto;
+  font-style: normal;
+}
+
+#connect-address a {
+  color: #75000a;
+  font-weight: 600;
+}
+
+#connect-address p {
+  margin: 0;
 }
 
 /*Responsive Design*/
@@ -174,6 +299,7 @@ body img {
     flex-direction: column;
     align-items: start;
   }
+
   #title-text {
     padding-top: 10px;
     padding-bottom: 5px;
