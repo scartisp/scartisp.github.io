@@ -25,8 +25,9 @@ body img {
   background: black;
 }
 
+
 #main-header-tools,
-#title-header-div {
+#main-header-div {
   padding: 5px 20% 0 20%;
 }
 
@@ -37,6 +38,10 @@ body img {
   color: white;
   font-size: 2.25rem;
   font-weight: 600;
+}
+
+#top-right-search-div {
+  display: none;
 }
 
 /*Navigation*/
@@ -137,7 +142,7 @@ body img {
   color: white;
 }
 
-#hamburger-img {
+#hamburger-eyeglass-img {
   position: relative;
   top: -5px
 }
@@ -149,8 +154,12 @@ body img {
     display: none;
   }
 
-  #title-header-div {
-    padding-left: 5%;
+  #main-header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 
@@ -164,5 +173,16 @@ body img {
   #title-header-div {
     flex-direction: column;
     align-items: start;
+  }
+  #title-text {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  #top-right-search-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 10px;
   }
 }
