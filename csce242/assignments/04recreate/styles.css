@@ -69,30 +69,30 @@ body img {
   font-weight: 600;
 }
 
-#logo-div {
+.logo-div {
   display: flex;
 }
 
-#school-name-div {
+.school-name-div {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
 }
 
-#school-name-div p,
-#school-name-div h3 {
+.school-name-div p,
+.school-name-div h3 {
   margin: 0;
   white-space: nowrap;
 }
 
-#school-name-div p {
-  margin: 0;
+.school-name-div p {
   font-size: 18px;
+  font-weight: 400;
 }
 
-#school-name-div h3 {
-  margin: 0;
+.school-name-div h3 {
   font-size: 28px;
+  font-weight: 600;
 }
 
 #top-right-search-div {
@@ -238,6 +238,7 @@ body img {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-items: center;
 }
 
 #social-ul {
@@ -291,6 +292,96 @@ body img {
   margin: 0;
 }
 
+/*footer*/
+
+#main-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-inline: 40px;
+  box-sizing: border-box;
+  background-color: #75000a;
+}
+
+#footer-header {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  max-width: 1500px;
+  padding-top: 20px;
+}
+
+#school-name-div-footer {
+  color: white;
+}
+
+#footer-socials {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-left: auto;
+  list-style: none;
+  gap: 10px;
+}
+
+#footer-socials img {
+  border-radius: 20px;
+}
+
+#footer-columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1500px;
+  align-self: center;
+}
+
+#footer-columns h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#footer-columns ul {
+  list-style: none;
+  color: white;
+}
+
+#footer-columns section:not(:last-child){
+  padding-right: 5%;
+}
+
+#colleges-and-schools-footer ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(6, auto);
+  grid-auto-columns: max-content;
+}
+
+#officies-and-divisions-footer ul {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(6, auto);
+  grid-auto-columns: max-content;
+}
+
+#tools-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+
+#colleges-and-schools-footer ul,
+#officies-and-divisions-footer ul,
+#tools-footer ul {
+  justify-content: start;
+  margin: 0;
+  padding: 10px 0 0 0;
+  gap: 10px 50px;
+  border-top: white 1px solid;
+}
+
 /*typography*/
 
 .text {
@@ -302,19 +393,34 @@ body img {
   flex-direction: row;
 }
 
+.one {
+  flex: 1;
+}
+
+.two {
+  flex: 2;
+}
+
 /*Responsive Design*/
 
-@media (max-width: 1165px) {
+/*change header*/
+@media (max-width: 1600px) {
+
   #skip-button {
     display: none;
   }
 
+  #main-header-tools {
+    padding-left: 2%;
+  }
+
   #main-header-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 2%;
     padding-right: 2%;
+  }
+
+  #main-nav {
+    padding-right: 3%;
   }
 }
 
@@ -372,7 +478,12 @@ body img {
   .connect-col:not(:last-child) {
     border-right: none;
     padding-right: 0;
+    padding-bottom: 20px;
     border-bottom: black 1px solid;
+  }
+
+  #connect-links {
+    justify-content: center;
   }
 
   #connect-links ul {
