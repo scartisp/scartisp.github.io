@@ -45,7 +45,7 @@ body img {
 
 #main-header-tools-ul {
   padding-left: 0;
-  gap: 5px;
+  gap: 0;
 }
 
 #main-header-tools-ul li a,
@@ -53,7 +53,7 @@ body img {
 #main-header-nav a {
   color: white;
   text-decoration: none;
-  gap: 10px;
+
 }
 
 #main-header-dropdown {
@@ -108,8 +108,9 @@ body img {
 }
 
 #main-header-tools-ul>li:not(:last-child)::after {
-  content: ' |';
+  content: '|';
   color: white;
+  padding-inline: 10px;
 }
 
 #main-header-dropdown {
@@ -193,8 +194,8 @@ body img {
 
 #connect-body {
   display: flex;
-  width: 100%;
-  max-width: 1500px;
+  /* width: 100%;
+  max-width: 1500px; */
   padding-inline: 40px;
   box-sizing: border-box;
   gap: 20px;
@@ -301,14 +302,16 @@ body img {
   padding-inline: 40px;
   box-sizing: border-box;
   background-color: #75000a;
+  padding-bottom: 6%;
+  margin-bottom: 1px;
 }
 
 #footer-header {
   display: flex;
-  width: 100%;
+  /* width: 100%;
+  max-width: 1500px; */
   align-self: center;
   align-items: center;
-  max-width: 1500px;
   padding-top: 20px;
 }
 
@@ -332,14 +335,15 @@ body img {
 #footer-columns {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 1500px;
+  /* width: 100%;
+  max-width: 1500px; */
   align-self: center;
 }
 
 #footer-columns h4 {
   color: white;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 #footer-columns ul {
@@ -347,7 +351,7 @@ body img {
   color: white;
 }
 
-#footer-columns section:not(:last-child){
+#footer-columns section:not(:last-child) {
   padding-right: 5%;
 }
 
@@ -370,7 +374,7 @@ body img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-} 
+}
 
 #colleges-and-schools-footer ul,
 #officies-and-divisions-footer ul,
@@ -380,6 +384,34 @@ body img {
   padding: 10px 0 0 0;
   gap: 10px 50px;
   border-top: white 1px solid;
+}
+
+#bottom-footer {
+  width: 100%;
+  background-color: black;
+  padding: 10px 0 15px 0;
+  margin: 0;
+}
+
+#bottom-footer-div {
+  /* align-self: center; */
+  margin-inline: auto;
+}
+
+#bottom-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+#bottom-footer ul>li:not(:last-child)::after {
+  content: '|';
+  color: white;
+  padding-inline: 10px;
 }
 
 /*typography*/
@@ -399,6 +431,11 @@ body img {
 
 .two {
   flex: 2;
+}
+
+.width-alignment {
+  width: 100%;
+  max-width: 1500px;
 }
 
 /*Responsive Design*/
@@ -494,5 +531,33 @@ body img {
     max-width: none;
     text-align: center;
   }
+}
 
+@media (max-width: 850px) {
+  #footer-header {
+    flex-direction: column;
+  }
+
+  #footer-socials {
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  #footer-columns {
+    flex-direction: column;
+  }
+
+  #colleges-and-schools-footer ul {
+    grid-template-rows: repeat(11, auto);
+  }
+
+  #officies-and-divisions-footer ul {
+    grid-template-rows: repeat(6, auto);
+  }
+
+  #colleges-and-schools-footer ul,
+  #officies-and-divisions-footer ul {
+    column-gap: 100px;
+  }
 }
