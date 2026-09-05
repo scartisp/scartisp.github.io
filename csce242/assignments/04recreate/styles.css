@@ -201,15 +201,80 @@ body img {
 
 #first-aside-box {
   position: absolute;
-  bottom: 300px;
-  right: 50px;
+  bottom: 360px;
+  right: 70px;
   width: clamp(350px, 60vw, 750px);
+}
+
+#research-main-body-div {
+  position: relative;
+}
+
+#info-main-body-ul {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  list-style: none;
+  gap: 40px;
+}
+
+#info-main-body-ul div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 410px;
+  /* justify-content: center; */
+}
+
+#info-main-body-ul img {
+  width: 410px;
+  height: 410px;
+}
+
+#info-main-body-ul h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #75000a;
+}
+
+#info-main-body-ul p,
+h4 {
+  padding-left: 10px;
+}
+
+#second-aside-box {
+  position: absolute;
+  bottom: 525px;
+  left: 70px;
+  width: clamp(400px, 60vw, 750px);
+}
+
+#last-main-body-div {
+  margin: 0;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+#third-aside-box {
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+  width: clamp(400px, 60vw, 550px);
+}
+
+.position-relative {
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .aside-box {
   box-sizing: border-box;
   padding: 40px;
-  background-color:#75000a;
+  background-color: #75000a;
   color: white;
 }
 
@@ -240,7 +305,7 @@ body img {
   align-items: center;
   background-color: #EDEDED;
   width: 100%;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding-bottom: 20px;
 }
 
