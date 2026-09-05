@@ -140,6 +140,7 @@ body img {
 #main-nav {
   width: fit-content;
   margin-left: auto;
+  margin-bottom: 0;
   padding-right: 22%;
   padding-top: 10px;
   gap: 20px;
@@ -159,6 +160,76 @@ body img {
 #hamburger-eyeglass-img {
   position: relative;
   top: -5px
+}
+
+/* main body */
+
+#main-body {
+  /* position: relative; */
+}
+
+#education-main-body-div {
+  position: relative;
+}
+
+#quote-main-body-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#quote-main-body-div img {
+  border-radius: 50%;
+}
+
+#quote-p-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+#quote {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: #75000a;
+  line-height: 1.8;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#first-aside-box {
+  position: absolute;
+  bottom: 300px;
+  right: 50px;
+  width: clamp(350px, 60vw, 750px);
+}
+
+.aside-box {
+  box-sizing: border-box;
+  padding: 40px;
+  background-color:#75000a;
+  color: white;
+}
+
+.aside-box h4 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.aside-box p {
+  font-size: 18px;
+}
+
+.aside-box button {
+  padding: 12px 28px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* connect section */
@@ -437,6 +508,23 @@ body img {
 .width-alignment {
   width: 100%;
   max-width: 1500px;
+}
+
+.large-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.body-text {
+  display: block;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 650;
 }
 
 /*Responsive Design*/
