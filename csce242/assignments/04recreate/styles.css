@@ -187,7 +187,34 @@ body img {
 #quote-p-div {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin-left: 35px;
+}
+
+#quote-p-div::before,
+#quote-p-div::after {
+  position: absolute;
+  font-size: 200px;
+  line-height: 1;
+  color: #dcdcdc;
+  z-index: 0;
+}
+
+#quote-p-div::before {
+  content: '\201C';
+  top: -20px;
+  left: -20px;
+}
+
+#quote-p-div::after {
+  content: '\201D';
+  right: -20px;
+  bottom: -100px;
+}
+
+#quote-p-div>p {
+  position: relative;
+  z-index: 1;
 }
 
 #quote {
@@ -709,13 +736,17 @@ h4 {
 }
 
 @media (max-width: 770px) {
-  #first-aside-box, #second-aside-box, #third-aside-box {
+
+  #first-aside-box,
+  #second-aside-box,
+  #third-aside-box {
     left: 10px;
     right: 10px;
 
     width: auto;
     max-width: 700px;
   }
+
   .position-relative {
     padding-bottom: 120px;
   }
