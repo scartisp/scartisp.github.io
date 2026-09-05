@@ -25,6 +25,9 @@ body img {
 
 #main-header {
   background: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #main-header-tools,
