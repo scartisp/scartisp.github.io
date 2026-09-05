@@ -167,10 +167,6 @@ body img {
 
 /* main body */
 
-#main-body {
-  /* position: relative; */
-}
-
 #education-main-body-div {
   position: relative;
 }
@@ -180,7 +176,8 @@ body img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 #quote-main-body-div img {
@@ -204,7 +201,7 @@ body img {
 
 #first-aside-box {
   position: absolute;
-  bottom: 360px;
+  bottom: 20px;
   right: 70px;
   width: clamp(350px, 60vw, 750px);
 }
@@ -215,13 +212,14 @@ body img {
 
 #info-main-body-ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-self: center;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 50px;
   list-style: none;
   gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #info-main-body-ul div {
@@ -229,7 +227,6 @@ body img {
   flex-direction: column;
   align-items: flex-start;
   width: 410px;
-  /* justify-content: center; */
 }
 
 #info-main-body-ul img {
@@ -251,16 +248,16 @@ h4 {
 
 #second-aside-box {
   position: absolute;
-  bottom: 525px;
+  bottom: 20px;
   left: 70px;
   width: clamp(400px, 60vw, 750px);
 }
 
-#last-main-body-div {
+/* #last-main-body-div {
   margin: 0;
   position: relative;
   padding-bottom: 40px;
-}
+} */
 
 #third-aside-box {
   position: absolute;
@@ -271,7 +268,7 @@ h4 {
 
 .position-relative {
   position: relative;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .aside-box {
@@ -308,7 +305,6 @@ h4 {
   align-items: center;
   background-color: #EDEDED;
   width: 100%;
-  /* margin-top: 50px; */
   padding-bottom: 20px;
 }
 
@@ -333,8 +329,6 @@ h4 {
 
 #connect-body {
   display: flex;
-  /* width: 100%;
-  max-width: 1500px; */
   padding-inline: 40px;
   box-sizing: border-box;
   gap: 20px;
@@ -447,8 +441,6 @@ h4 {
 
 #footer-header {
   display: flex;
-  /* width: 100%;
-  max-width: 1500px; */
   align-self: center;
   align-items: center;
   padding-top: 20px;
@@ -474,8 +466,6 @@ h4 {
 #footer-columns {
   display: flex;
   flex-direction: row;
-  /* width: 100%;
-  max-width: 1500px; */
   align-self: center;
 }
 
@@ -534,7 +524,6 @@ h4 {
 }
 
 #bottom-footer-div {
-  /* align-self: center; */
   margin-inline: auto;
 }
 
@@ -716,5 +705,22 @@ h4 {
   #colleges-and-schools-footer ul,
   #officies-and-divisions-footer ul {
     column-gap: 100px;
+  }
+}
+
+@media (max-width: 770px) {
+  #first-aside-box, #second-aside-box, #third-aside-box {
+    left: 10px;
+    right: 10px;
+
+    width: auto;
+    max-width: 700px;
+  }
+  .position-relative {
+    padding-bottom: 120px;
+  }
+
+  #quote-main-body-div {
+    flex-direction: column;
   }
 }
