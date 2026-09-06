@@ -257,8 +257,8 @@ body img {
 }
 
 #info-main-body-ul img {
-  width: 410px;
-  height: 410px;
+  max-width: 410px;
+  max-height: 410px;
 }
 
 #info-main-body-ul h4 {
