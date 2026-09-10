@@ -134,9 +134,43 @@ h1, h2, h3 {
     color:var(--headings);
 }
 
+/* #ball-animation {
+    min-height: 300px;
+    position: relative;
+} */
+#ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: 40%;
+}
+
+.bouncing-ball {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* bounce animation */
+@keyframes bounce {
+    0% {bottom: 40%; background-color: red;}
+    25% {background-color: purple;}
+    50% {bottom: 0%; background-color: green;}
+    75% {background-color: orange;}
+
+}
+
 /* columns for all devices */
 .columns-mobile {
     display:flex;
+}
+
+/* js styles */
+.cool-link {
+    background-color: teal;
+    color: magenta;
 }
 
 /* Responsive Design */
@@ -161,6 +195,8 @@ h1, h2, h3 {
 
     .project-card {
         margin-bottom:0;
+        min-height: 300px;
+        position: relative;
     }
     
     /* Navigation */
