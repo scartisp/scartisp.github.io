@@ -3,7 +3,7 @@ body {
   background-color: rgba(130, 200, 229, .5);
 }
 
-body img{
+body img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -58,6 +58,7 @@ body img{
 }
 
 #functionality-ul p {
+  font-size: 18px;
   color: rgb(28, 81, 117);
   margin-top: 0;
 }
@@ -98,9 +99,20 @@ body img{
   align-self: center;
 }
 
-#sun-div p{
+#sun-div p {
   display: none;
   position: absolute;
   top: 10%;
   right: 20px;
+}
+
+/*main footer*/
+#main-footer {
+  display: flex;
+  justify-content: center;
+}
+
+#main-footer p {
+  font-size: 18px;
+  color: rgb(28, 81, 117);
 }
