@@ -16,9 +16,9 @@
 
   <body>
     <ul id="functionality-ul">
-      <li>
+      <li id="speech-li">
         <h3>Speech</h3>
-        <div id="text-bubble-div">
+        <div id="text-bubble-div" class="display-none">
           hello world
         </div>
       </li>
@@ -31,12 +31,13 @@
           <option>Milk</option>
           <option>Gorilla Mind Blackberry Lemonade</option>
         </select>
+        <p id="selection-choice"></p>
       </li>
       <li>
         <h3>Add a Sticker</h3>
         <div id="sun-div">
-          <img src="./images/sun.png">
-          <p>☀️</p>
+          <img src="./images/sun.png" id="sun-img">
+          <p id="emoji-p" class="display-none">☀️</p>
         </div>
       </li>
     </ul>
@@ -44,7 +45,7 @@
   <footer id="main-footer">
     <p>&copy; Simion Cartis</p>
   </footer>
-
+<script src="./script.js"></script>
 </body>
 
 </html>

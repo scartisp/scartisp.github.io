@@ -45,9 +45,13 @@ body img {
   width: 400px;
   height: 400px;
   padding: 30px 20px;
-  margin-top: 20px;
+  /* margin-top: 2px; */
   background-color: rgba(204, 114, 70, .5);
   border: 1px solid rgb(64, 28, 4);
+}
+
+#speech-li:hover {
+  cursor: pointer;
 }
 
 #functionality-ul h3 {
@@ -64,7 +68,6 @@ body img {
 }
 
 #text-bubble-div {
-  display: none;
   align-self: center;
   background-color: white;
   position: relative;
@@ -92,6 +95,7 @@ body img {
 #selector {
   field-sizing: content;
   max-width: fit-content;
+  margin-bottom: 20px;
 }
 
 #sun-div {
@@ -99,10 +103,13 @@ body img {
   align-self: center;
 }
 
-#sun-div p {
-  display: none;
+#sun-img {
+  cursor: pointer;
+}
+
+#emoji-p {
   position: absolute;
-  top: 10%;
+  top: 5%;
   right: 20px;
 }
 
@@ -115,4 +122,21 @@ body img {
 #main-footer p {
   font-size: 18px;
   color: rgb(28, 81, 117);
+}
+
+/*typography/classes*/
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+/*Responsive design*/
+@media (max-width: 870px) {
+  #functionality-ul li {
+    height: fit-content;
+  }
 }
