@@ -25,13 +25,18 @@ body img {
   justify-content: space-between;
   align-items: center;
   background-color: var(--brand-indigo);
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-inline: 60px;
+  border-bottom: 3px solid var(--brand-orange);
 }
 
 #head-right {
   display: flex;
   flex-direction: row;
+  position: relative
+}
+
+#head-right img {
+  width: clamp(48px, 20.53vw, 78px)
 }
 
 #website-name {
@@ -58,7 +63,7 @@ body img {
 #website-name h1 {
   font-family: var(--jua-font);
   color: var(--brand-cream);
-  font-size: 44px;
+  font-size: clamp(1.75rem, 11.58vw, 2.75rem);
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -67,15 +72,16 @@ body img {
   font-family: var(--jua-font);
   color: var(--brand-orange);
   font-weight: 500;
-  font-size: 26px;
+  font-size: clamp(1rem, 6.84vw, 1.625rem);
   margin-top: 0;
 }
 
 #main-navigation ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   gap: 44px;
+  padding: 0;
 }
 
 #main-navigation a {
@@ -90,6 +96,8 @@ body img {
 #main-navigation a.selected-page {
   color: var(--brand-orange);
   text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
 }
 
 .uppercase {
@@ -106,7 +114,32 @@ body img {
   #main-head {
     flex-direction: column;
   }
+
   #website-name::after {
     display: none;
+  }
+
+  #head-right::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    width: auto;
+    height: 1px;
+    background-color: var(--brand-cream);
+  }
+}
+
+@media (max-width: 1020px) {
+  #main-navigation ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 440px) {
+  #main-head {
+    padding-inline: 0;
   }
 }
