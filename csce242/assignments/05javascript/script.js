@@ -1,5 +1,4 @@
-
-//toggle visibilty of speech bubble
+  //toggle visibilty of speech bubble
 document.getElementById('speech-li').onclick = () => {
   document.getElementById('text-bubble-div').classList.toggle('display-none');
   document.getElementById('text-bubble-div').classList.toggle('display-flex');

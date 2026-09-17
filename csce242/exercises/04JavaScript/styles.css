@@ -162,6 +162,10 @@ h1, h2, h3 {
 
 }
 
+.hidden {
+    display: none;
+}
+
 /* columns for all devices */
 .columns-mobile {
     display:flex;
