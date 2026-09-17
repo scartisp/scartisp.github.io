@@ -3,11 +3,13 @@
   --brand-orange: #FF972A;
   --brand-cream: #F6EEE3;
   --brand-indigo: #3D4A7C;
+  /* font variables */
   --jua-font: "Jua", sans-serif;
   --inter-font: "Inter", sans-serif;
 }
 
 /* Structure*/
+
 body {
   margin: 0;
 }
@@ -93,6 +95,7 @@ body img {
 }
 
 /* styles and classes */
+
 #main-navigation a.selected-page {
   color: var(--brand-orange);
   text-decoration: underline;
