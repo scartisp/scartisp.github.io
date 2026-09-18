@@ -52,7 +52,13 @@ body {
 }
 
 /* main sections */
+#how-many-days-p, #days-left-p {
+  margin-top: 0;
+}
 
+#percent-lost-p, #days-left-p {
+  margin-bottom: 0;
+}
 
 /* styles and classes */
 

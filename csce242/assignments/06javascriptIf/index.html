@@ -13,7 +13,7 @@
     <h1>Assignment 8</h1>
     <h2>If Statements</h2>
     <nav id="main-nav">
-      <i id= 'arrow-i' class="arrow-down"></i>
+      <i id='arrow-i' class="arrow-down"></i>
       <ul id="dropdown-menu-ul" class="display-flex small-screen-display-none">
         <li id="exercise-one-li">Exercise 1</li>
         <li id="exercise-two-li">Exercise 2</li>
@@ -23,12 +23,16 @@
 
   <section id="exercise-one-section" class="main-section display-flex">
     <h3>Missing Class Point Deduction</h3>
-    <p>How many days do you intend to miss class?</p>
-    <input>
+    <p id="how-many-days-p">How many days do you intend to miss class?</p>
+    <input type="number" id="exercise-one-input">
+    <p id="percent-lost-p" class="display-none">you will lose <span id="percent-lost-span"></span>% for skipping <span
+        id="classes-skipped-span"></span> days</p>
+    <p id="classes-missed-comment-p"></p>
   </section>
   <section id="exercise-two-section" class="main-section display-none">
     <h3>End of Semester Counter</h3>
-    <p>You have <span id="days-left-span"></span> days left in the semester</p>
+    <p id="days-left-p">You have <span id="days-left-span"></span> days left in the semester</p>
+    <p id="days-remaining-comment-p"></p>
   </section>
   <footer id="main-footer">@Simion Cartis</footer>
   <script src="./script.js"></script>
