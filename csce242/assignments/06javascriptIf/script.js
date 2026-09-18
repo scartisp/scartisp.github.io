@@ -41,7 +41,7 @@ document.getElementById('exercise-one-input').addEventListener('input', (event) 
   document.getElementById('percent-lost-span').innerHTML = percentMissingAttendance;
   document.getElementById('classes-skipped-span').innerHTML = classesMissed;
 
-  if (classesMissed === 0)
+  if (classesMissed == 0)
     classesMissedComment.innerHTML = "you're attending all classes! Great job!";
   else if (classesMissed >= 1 && classesMissed <= 3)
     classesMissedComment.innerHTML = `you're missing ${classesMissed} classes. Ok, but don't turn it into a habit.`;
