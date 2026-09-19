@@ -3,6 +3,7 @@
   --brand-orange: #FF972A;
   --brand-cream: #F6EEE3;
   --brand-indigo: #3D4A7C;
+  --brand-indigo-deep: #1F2545;
   /* font variables */
   --jua-font: "Jua", sans-serif;
   --inter-font: "Inter", sans-serif;
@@ -19,7 +20,7 @@ body img {
   max-height: 100%;
 }
 
-/*head*/
+/*header*/
 
 #main-head {
   display: flex;
@@ -94,6 +95,74 @@ body img {
   text-transform: uppercase;
 }
 
+/* main hero */
+
+#main-hero-section {
+  background-image: url(./images/Hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  width: 100%;
+  padding-bottom: 48px;
+}
+
+#main-hero-content-div {
+  align-self: center;
+  width: 100%;
+  padding-inline: 60px;
+}
+
+#tagline-div {
+  font-family: var(--jua-font);
+  font-size: clamp(1.25rem, 9vw, 3.5rem);
+  padding-top: 48px;
+}
+
+#tagline-div p {
+  margin: 0;
+  max-width: fit-content;
+  text-transform: uppercase;
+}
+
+#tagline-div p:not(:last-of-type) {
+  color: var(--brand-cream);
+}
+
+#tagline-div p:last-child {
+  color: var(--brand-orange);
+}
+
+#hero-p {
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--brand-cream);
+  max-width: 503px;
+}
+
+#hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--inter-font);
+  font-size: 15px;
+  color: var(--brand-indigo-deep);
+  background-color: var(--brand-orange);
+  margin-top: 28px;
+  width: 281px;
+  height: 46px;
+  border: transparent;
+  border-radius: 6px;
+}
+
+#hero-btn:hover {
+  cursor: pointer;
+}
+
+#hero-btn img {
+  padding-left: 10px;
+}
+
 /* styles and classes */
 
 #main-navigation a.selected-page {
@@ -140,9 +209,37 @@ body img {
     justify-content: center;
   }
 }
+/* I like that image background, and it only starts becoming a problem around
+here. This is why there's a separate media query with a diff of 20 px*/
+@media (max-width:1000px) {
+  #main-hero-section {
+    background: linear-gradient(to right,
+        var(--brand-indigo-deep) 0%,
+        var(--brand-indigo-deep) 60%,
+        #4c3b3c 100%);
+  }
+}
 
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   #main-head {
     padding-inline: 0;
   }
+
+  #main-hero-content-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0;
+  }
+
+  #tagline-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero-p {
+    text-align: center;
+  }
+
 }
