@@ -369,7 +369,7 @@ here. This is why there's a separate media query with a diff of 20 px*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 0;
+    /* padding-inline: 0; */
   }
 
   #tagline-div {
