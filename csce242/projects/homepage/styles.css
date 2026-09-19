@@ -106,29 +106,29 @@ body img {
   padding-bottom: 48px;
 }
 
-#main-hero-content-div {
+/* #main-hero-content-div {
   align-self: center;
   width: 100%;
   padding-inline: 60px;
-}
+} */
 
-#tagline-div {
+#hero-tagline-div {
+  padding-top: 48px;
   font-family: var(--jua-font);
   font-size: clamp(1.25rem, 9vw, 3.5rem);
-  padding-top: 48px;
 }
 
-#tagline-div p {
+#hero-tagline-div p {
   margin: 0;
   max-width: fit-content;
   text-transform: uppercase;
 }
 
-#tagline-div p:not(:last-of-type) {
+#hero-tagline-div p:not(:last-of-type) {
   color: var(--brand-cream);
 }
 
-#tagline-div p:last-child {
+#hero-tagline-div p:last-child {
   color: var(--brand-orange);
 }
 
@@ -149,8 +149,7 @@ body img {
   color: var(--brand-indigo-deep);
   background-color: var(--brand-orange);
   margin-top: 28px;
-  width: 281px;
-  height: 46px;
+  padding: 14px;
   border: transparent;
   border-radius: 6px;
 }
@@ -161,6 +160,104 @@ body img {
 
 #hero-btn img {
   padding-left: 10px;
+}
+
+/* caruosel */
+
+/* bottom section*/
+
+#bottom-section {
+  background-image: url(./images/homepage-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  isolation: isolate;
+  width: 100%;
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+
+#bottom-section-content-div {
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+  box-sizing: border-box;
+  padding-left: 0;
+}
+
+#bottom-section-content-left-div {
+  position: relative;
+  padding-left: 180px;
+}
+
+#bottom-section-guitar-img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: -50px;
+}
+
+#horizontal-line {
+  border: none;
+  height: 5px;
+  width: 64px;
+  background-color: var(--brand-orange);
+  margin: 0;
+  margin-left: 180px;
+  border-radius: 3px;
+}
+
+#bottom-section-tagline-p {
+  font-family: var(--jua-font);
+  font-size: clamp(1.75rem, 9vw, 2.75rem);
+  color: var(--brand-cream);
+  max-width: 600px;
+  margin: 0;
+  margin-top: 27px;
+  /* placeholder */
+}
+
+#bottom-section-tagline-span {
+  color: var(--brand-orange);
+}
+
+#bottom-section-text-p {
+  font-family: var(--inter-font);
+  font-size: 18px;
+  color: var(--brand-cream);
+  max-width: 600px;
+  margin: 22px 0;
+}
+
+#bottom-section-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--inter-font);
+  font-size: 15px;
+  color: var(--brand-orange);
+  padding: 14px;
+  background-color: transparent;
+  border: 2px solid var(--brand-orange);
+  border-radius: 6px;
+}
+
+#bottom-section-btn img {
+  padding-left: 10px;
+}
+
+#bottom-section-btn:hover {
+  cursor: pointer;
+}
+
+#practice-img {
+  border-radius: 12px;
+  flex: 0 1 560px;
+  min-width: 0;
+  align-self: flex-start;
+  box-shadow: 5px 5px 15px rgba(255, 151, 42, 5);
+  margin-left: 30px;
+  margin-top: 27px;
 }
 
 /* styles and classes */
@@ -178,6 +275,12 @@ body img {
 
 .letter-spacing-two {
   letter-spacing: 2px;
+}
+
+.content-div {
+  align-self: center;
+  width: 100%;
+  padding-inline: 60px;
 }
 
 /* responsive design */
@@ -208,7 +311,20 @@ body img {
   #main-navigation ul {
     justify-content: center;
   }
+
+  #bottom-section-content-div {
+    flex-direction: column;
+  }
+
+  #practice-img {
+  flex: none;
+  margin-left: 180px;
+  width: calc(100% - 180px);
+  max-width: 560px;
 }
+}
+
+
 /* I like that image background, and it only starts becoming a problem around
 here. This is why there's a separate media query with a diff of 20 px*/
 @media (max-width:1000px) {
@@ -217,6 +333,30 @@ here. This is why there's a separate media query with a diff of 20 px*/
         var(--brand-indigo-deep) 0%,
         var(--brand-indigo-deep) 60%,
         #4c3b3c 100%);
+  }
+}
+
+@media (max-width:700px) {
+  #bottom-section-content-left-div {
+    padding-left: 0;
+  }
+
+  #horizontal-line {
+    margin-left: 0;
+  }
+
+  #bottom-section-tagline-p,
+  #bottom-section-tagline-p {
+    text-align: center;
+  }
+
+  #practice-img {
+  margin-left: 0;
+  width: 100%;
+}
+
+  .content-div {
+    padding-inline: 0;
   }
 }
 
@@ -238,7 +378,21 @@ here. This is why there's a separate media query with a diff of 20 px*/
     align-items: center;
     justify-content: center;
   }
+
   #hero-p {
+    text-align: center;
+  }
+
+  #bottom-section-content-left-div {
+    padding-left: 0;
+  }
+
+  #horizontal-line {
+    margin-left: 0;
+  }
+
+  #bottom-section-tagline-p,
+  #bottom-section-tagline-p {
     text-align: center;
   }
 
