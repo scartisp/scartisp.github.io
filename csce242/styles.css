@@ -73,10 +73,14 @@ h2 {
   font-size: 3.5rem;
   color: rgb(234, 102, 14);
 }
+h3 {
+  margin: 0;
+  padding: 18px 0;
+}
 
 p {
   font-family: "IBM Plex Sans Hebrew", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.25rem; 
 }
 
 .section-div {
@@ -109,6 +113,12 @@ p {
   background-color: rgb(130, 200, 229);
   flex: 1;
   text-align: center;
+}
+
+.card p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #list-of-links {
