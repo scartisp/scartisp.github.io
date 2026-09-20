@@ -180,38 +180,63 @@ body img {
   justify-content: center;
 }
 
+#carousel-content-div > img {
+  flex: none;
+  width: clamp(32px, 4vw, 52px);
+  height: auto;
+}
+
 #card-ul {
+  --visible: 4;
+  --gap: 24px;
   display: flex;
   flex-direction: row;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: calc(var(--visible) * 270px + (var(--visible) - 1) * var(--gap));
+  overflow: hidden;
+  gap: var(--gap);
   list-style: none;
-  gap: 24px;
   padding: 0;
   margin-inline: 20px;
 }
 
 .genre-card {
   display: flex;
-  width: 270px;
-  height: 230px;
+  flex: 0 0 calc((100% - (var(--visible) - 1) * var(--gap)) / var(--visible));
+  height: auto;
   align-items: flex-end;
+  aspect-ratio: 270 / 230;
+  background-size: cover;
+  background-position: center;
+  container-type: inline-size;
 }
 
 .genre-card p {
   display: flex;
   align-items: center;
   font-family: var(--jua-font);
-  font-size: 26px;
+  font-size: 9.6cqw;
   text-transform: uppercase;
   width: 100%;
-  gap: 10px;
+  gap: 3.7cqw;
   margin: 0;
-  padding-left: 20px;
-  padding-right: 24px;
-  padding-bottom: 18px;
+  padding-inline: 7.4cqw 8.9cqw;
+  padding-bottom: 6.7cqw;
   color: var(--brand-cream);
 }
 
+.genre-card p img {
+  flex: none;
+  height: auto;
+}
+
+.genre-card p img:first-child {
+  width: min(11.85cqw, 32px);
+}
+
 .genre-card p img:last-child {
+  width: min(8.15cqw, 22px);
   margin-left: auto;
 }
 
@@ -226,6 +251,7 @@ body img {
 #country-card {
   background-image: url(./images/genre-images/country.png);
 }
+
 #funk-card {
   background-image: url(./images/genre-images/funk.png);
 }
@@ -251,6 +277,7 @@ body img {
   border-radius: 50%;
   background-color: var(--brand-cream);
 }
+
 /* bottom section*/
 
 #bottom-section {
@@ -420,9 +447,18 @@ here. This is why there's a separate media query with a diff of 20 px*/
         var(--brand-indigo-deep) 60%,
         #4c3b3c 100%);
   }
+
+  #card-ul {
+    --visible: 3;
+  }
 }
 
 @media (max-width:700px) {
+
+  #card-ul {
+    --visible: 2;
+  }
+
   #bottom-section-content-left-div {
     padding-left: 0;
   }
@@ -467,6 +503,10 @@ here. This is why there's a separate media query with a diff of 20 px*/
 
   #hero-p {
     text-align: center;
+  }
+
+  #card-ul {
+    --visible: 1;
   }
 
   #bottom-section-content-left-div {
