@@ -176,6 +176,10 @@ h1, h2, h3 {
     background-color: teal;
     color: magenta;
 }
+.error {
+    color: red;
+    font-style: italic;
+}
 
 /* Responsive Design */
 
