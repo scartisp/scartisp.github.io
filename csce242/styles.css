@@ -19,8 +19,8 @@ header {
 }
 
 .rows {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .one {
@@ -146,8 +146,9 @@ a:hover {
   color: black;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1000px) {
   .rows {
+      display: flex;
     flex-direction: column;
   }
 
