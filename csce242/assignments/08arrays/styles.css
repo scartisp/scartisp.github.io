@@ -39,16 +39,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #pick-destination-p {
   color: #8fc37d;
+  justify-self: center;
+  margin-top: 0;
 }
 
 #selector {
   field-sizing: content;
   max-width: fit-content;
-   color: #8fc37d;
+  color: #8fc37d;
+  padding: 5px 2px;
 }
 
 #selector option {
@@ -56,7 +60,14 @@ body {
 }
 
 #destination-choices-ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+  gap: 10px;
+
 }
 
 #destination-choices-ul li {
@@ -72,4 +83,12 @@ body {
   width: 600px;
   height: 600px;
   border: none;
+}
+
+@media (max-width: 700px) {
+  .map {
+    width: 300px;
+    height: 300px;
+    border: none;
+  }
 }
