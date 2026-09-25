@@ -49,10 +49,6 @@ body {
   height: 46px;
 }
 
-.car-flipped {
-  transform: scaleX(-1);
-}
-
 .car-roof {
   position: absolute;
   top: 0;
