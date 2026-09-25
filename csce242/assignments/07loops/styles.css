@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+/* grass */
+.grass {
+  background-color: green;
+  width: 100%;
+  height: 200px;
+}
+/* road */
+#road {
+  --lane-height: 90px;
+  --edge-line: 5px;
+  --center-line: 6px;
+
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(var(--lane-height) * 2);
+  background-color: #333;
+  border-top: var(--edge-line) solid #fff;
+  border-bottom: var(--edge-line) solid #fff;
+}
+
+#road::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: var(--center-line);
+  transform: translateY(-50%);
+  background: repeating-linear-gradient(to right,
+      #e8b71a 0 45px,
+      transparent 45px 90px);
+}
+
+/* car */
+.car {
+  --car-color: #3ec9a7;
+  --wheel-color: #1c1c1c;
+  --hub-color: #9aa0a6;
+  --glass-color: #cfe8f7;
+
+  position: absolute;
+  width: 90px;
+  height: 46px;
+}
+
+.car-flipped {
+  transform: scaleX(-1);
+}
+
+.car-roof {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 44px;
+  height: 16px;
+  background-color: var(--glass-color);
+  border-radius: 12px 10px 2px 2px;
+}
+
+.car-body {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: var(--car-color);
+  border-radius: 10px 12px 8px 8px;
+}
+
+/* headlight */
+.car-body::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 3px;
+  width: 7px;
+  height: 6px;
+  background-color: #ffe9a8;
+  border-radius: 3px;
+}
+
+.wheel {
+  position: absolute;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  background-color: var(--wheel-color);
+  border-radius: 50%;
+}
+
+/* hubcap */
+.wheel::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--hub-color);
+  border-radius: 50%;
+}
+
+.wheel-back {
+  left: 14px;
+}
+
+.wheel-front {
+  left: 60px;
+}
