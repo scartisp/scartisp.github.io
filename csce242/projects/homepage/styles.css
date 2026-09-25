@@ -460,8 +460,9 @@ here. This is why there's a separate media query with a diff of 20 px*/
   }
 
   #bottom-section-content-left-div {
-    padding-left: 0;
+    padding-inline: 5px;
   }
+
 
   #horizontal-line {
     margin-left: 0;
@@ -503,16 +504,13 @@ here. This is why there's a separate media query with a diff of 20 px*/
 
   #hero-p {
     text-align: center;
+    padding-inline: 5px;
   }
 
   #card-ul {
     --visible: 1;
   }
-
-  #bottom-section-content-left-div {
-    padding-left: 0;
-  }
-
+  
   #horizontal-line {
     margin-left: 0;
   }
