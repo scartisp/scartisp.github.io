@@ -1,0 +1,232 @@
+:root {
+  /*Color variables*/
+  --brand-orange: #FF972A;
+  --brand-cream: #F6EEE3;
+  --brand-indigo: #3D4A7C;
+  --brand-indigo-deep: #1F2545;
+  --brand-deepest-indigo: #171A2E;
+  /* font variables */
+  --jua-font: "Jua", sans-serif;
+  --inter-font: "Inter", sans-serif;
+}
+
+/* Structure*/
+
+body {
+  margin: 0;
+}
+
+body img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*header*/
+
+#main-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--brand-indigo);
+  padding-inline: 60px;
+  border-bottom: 3px solid var(--brand-orange);
+}
+
+#head-right {
+  display: flex;
+  flex-direction: row;
+  position: relative
+}
+
+#head-right img {
+  width: clamp(48px, 20.53vw, 78px)
+}
+
+#website-name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#website-name::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: var(--brand-cream);
+
+}
+
+#website-name h1 {
+  font-family: var(--jua-font);
+  color: var(--brand-cream);
+  font-size: clamp(1.75rem, 11.58vw, 2.75rem);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#website-name h2 {
+  font-family: var(--jua-font);
+  color: var(--brand-orange);
+  font-weight: 500;
+  font-size: clamp(1rem, 6.84vw, 1.625rem);
+  margin-top: 0;
+}
+
+#main-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 44px;
+  padding: 0;
+}
+
+#main-navigation a {
+  font-family: var(--inter-font);
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--brand-cream);
+  text-transform: uppercase;
+}
+
+/* search section*/
+#search-bar-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--brand-deepest-indigo);
+  width: 100%;
+  height: 100px;
+  padding-top: 34px;
+  padding-bottom: 26px;
+  border-bottom: 3px solid var(--brand-orange);
+}
+
+#menu-img {
+  position: absolute;
+  left: 1%;
+}
+
+#search-bar-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--brand-cream);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#search-bar-input {
+  font-family: var(--inter-font);
+  width: 800px;
+  background-color: transparent;
+  border: none;
+  padding-left: 10px;
+}
+
+#search-bar-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--inter-font);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--brand-indigo-deep);
+  background-color: var(--brand-orange);
+  padding: 14px;
+  border: transparent;
+  border-radius: 6px;
+}
+
+#search-bar-button img {
+  padding-left: 10px;
+}
+
+/* styles and classes */
+
+#main-navigation a.selected-page {
+  color: var(--brand-orange);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing-two {
+  letter-spacing: 2px;
+}
+
+.content-div {
+  align-self: center;
+  width: 100%;
+  padding-inline: 60px;
+}
+
+/* responsive design */
+
+@media (max-width: 1360px) {
+  #main-head {
+    flex-direction: column;
+  }
+
+  #website-name::after {
+    display: none;
+  }
+
+  #head-right::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    width: auto;
+    height: 1px;
+    background-color: var(--brand-cream);
+  }
+}
+
+@media (max-width: 1100px) {
+  #search-bar-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 1%;
+  }
+
+  #menu-img {
+    position: relative;
+    left: 0;
+  }
+
+  #search-bar-input {
+    width: clamp(120px, 60vw, 800px);
+  }
+}
+
+@media (max-width: 1020px) {
+  #main-navigation ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  #search-bar-button {
+    padding: 5px;
+  }
+
+  #search-bar-button img {
+  padding-left: 5px;
+}
+}
