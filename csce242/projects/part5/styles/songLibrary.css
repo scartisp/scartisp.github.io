@@ -156,7 +156,7 @@ body img {
 .song-section {
   background-color: var(--brand-indigo-deep);
   justify-self: center;
-  width: 95%;
+  width: fit-content;
   padding-inline: 1%;
   padding-top: 18px;
   padding-bottom: 60px;
@@ -179,6 +179,7 @@ body img {
 }
 
 .song-section-expand-list-span {
+  white-space: nowrap;
   color: var(--brand-indigo-deep);
   background-color: var(--brand-orange);
   padding: 5px;
@@ -186,7 +187,10 @@ body img {
 }
 
 .song-card-grid-div {
-  margin-inline: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-inline: clamp(8px, 47.5vw - 165px, 130px);
   margin-top: 42px;
 }
 
@@ -195,7 +199,7 @@ body img {
   display: flex;
   background-color: var(--brand-indigo);
   flex-direction: column;
-  max-width: fit-content;
+  max-width: 300px;
   padding-bottom: 18px;
   border: 1px solid var(--brand-cream);
   border-radius: 14px;
