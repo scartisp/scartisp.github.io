@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonia Music</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="../styles/scheduleLibrary.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--main header-->
+  <header id="main-head">
+    <div id="head-right">
+      <img src="../images/Logo-mark.svg">
+      <div id="website-name">
+        <h1 class="uppercase letter-spacing-two">Harmonia</h1>
+        <h2 class="uppercase letter-spacing-two">Guitars</h2>
+      </div>
+    </div>
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Song Library</a></li>
+        <li><a href="#">Technique Library</a></li>
+        <li><a href="#" class="selected-page">Schedule Library</a></li>
+        <li><a href="#">New Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--search bar-->
+  <section id="search-bar-section">
+    <div id="search-bar-div">
+      <img src="../images/eyeglass.png">
+      <input type="search" id="search-bar-input" placeholder="Search Schedules by name, technique, or song">
+      <button id="search-bar-button" class="uppercase">Search<img src="../images/arrow-right-indigo-deep.png">
+      </button>
+    </div>
+    <p id="search-in-p">
+      Search in: <span class="selected">All</span> <span class="unselected">Schedule name</span>
+      <span class="unselected">Technqiues</span> <span class="unselected">Songs</span>
+    </p>
+    <div id="active-filters-div">Must include:
+      <p><span>Technique:</span>Palm Muting<img src="../images/x-white.png"></p>
+      <p><span>Technique:</span>Strumming<img src="../images/x-white.png"></p>
+      <p><span>Song:</span>Harvest<img src="../images/x-white.png"></p>
+      <img src="../images/plus-white.png">
+      <span id="clear-all-span">clear all</span>
+    </div>
+  </section>
+
+  <!--song list-->
+  <section class="song-section">
+    <p class="song-section-header-p"><span class="song-section-title-span uppercase">recommended schedule</span>
+      <span class="song-section-expand-list-span">Expand List</span>
+    </p>
+    <div class="song-card-grid-div">
+      <div class="song-card-div">
+        <img src="../images/song-library-imgs/leper-img.png" class="song-card-img">
+        <div class="song-card-title-div">
+          <p class="song-title-p">Beginner Schedule</p>
+          <div class="rating-div">
+            <p class="num-of-hours-p">10</p>
+            <p class="hours-p uppercase">hours</p>
+          </div>
+        </div>
+        <p class="technique-title-p uppercase">techniques</p>
+        <div class="technique-list-div">
+          <p>Open chords</p>
+          <p>Strumming</p>
+        </div>
+        <p class="technique-title-p uppercase">Songs</p>
+        <div class="technique-list-div">
+          <p>Marry Had a Little Lamb</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
