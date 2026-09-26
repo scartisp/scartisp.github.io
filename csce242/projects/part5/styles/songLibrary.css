@@ -175,6 +175,7 @@ body img {
   font-family: var(--jua-font);
   font-size: 46px;
   color: var(--brand-cream);
+  padding-right: 10px;
 }
 
 .song-section-expand-list-span {
@@ -378,12 +379,17 @@ body img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   #search-bar-button {
     padding: 5px;
   }
 
   #search-bar-button img {
     padding-left: 5px;
+  }
+
+  .song-section-header-p {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
