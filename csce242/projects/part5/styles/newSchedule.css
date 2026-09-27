@@ -260,27 +260,34 @@ body img {
   padding: 0;
 }
 
-.unoppened-day-li {
+.day-li {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  border: 1px solid var(--brand-cream);
+  border-radius: 18px;
+  background-color: var(--brand-indigo-deep);
+}
+
+.opened-day-li {
+  border-color: var(--brand-orange);
+}
+
+.oppened-day-li {
+  padding: 30px 20px;
+  background-color: var(--brand-indigo-deep);
+  border: 1px solid var(--brand-orange);
+  border-radius: 18px;
+}
+
+.day-metadata {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
-  padding: 30px 20px;
-  background-color: var(--brand-indigo-deep);
-  border: 1px solid var(--brand-cream);
-  border-radius: 18px;
-}
-
-.oppened-day-li {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  box-sizing: border-box;
-  padding: 30px 20px;
-  background-color: var(--brand-indigo-deep);
-  border: 1px solid var(--brand-orange);
-  border-radius: 18px;
+  padding: 20px;
 }
 
 .day-title {
@@ -329,6 +336,7 @@ body img {
   gap: 12px;
   box-sizing: border-box;
   padding: 20px;
+  margin: 0 32px 18px 32px;
   background-color: var(--brand-deepest-indigo);
   border-radius: 5px;
 }
@@ -336,7 +344,18 @@ body img {
 .content-pill {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 10px;
+  box-sizing: border-box;
+  padding: 10px 16px 10px 12px;
+  background-color: var(--brand-indigo-deep);
+  border: 1px solid var(--brand-cream);
+  border-radius: 10px;
+}
 
+.content-pill-nested {
+  margin-left: 40px;
 }
 
 .dot-grid {
@@ -350,7 +369,146 @@ body img {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--brand-cream);
+  background-color: rgba(246, 238, 227, .5);
+}
+
+.song-image {
+  height: 44px;
+  width: 44px;
+  border-radius: 8px;
+}
+
+.item-description-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item-description-div h4,
+.item-description-div p {
+  font-family: var(--inter-font);
+  color: var(--brand-cream);
+  margin: 0;
+}
+
+.item-description-div h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.item-description-div p {
+  font-size: 13px;
+}
+
+.item-type {
+  font-family: var(--inter-font);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  margin: 0;
+  background-color: var(--brand-deepest-indigo);
+  border-radius: 4px;
+}
+
+.technique {
+  color: var(--brand-cream);
+}
+
+.song {
+  color: var(--brand-orange);
+}
+
+.item-time {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--inter-font);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand-cream);
+  padding: 8px 14px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--brand-indigo);
+  border: 1px solid var(--brand-cream);
+  border-radius: 8px;
+}
+
+.item-time button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.add-content {
+  width: 38px;
+  height: 38px;
+  align-self: center;
+}
+
+/* goal-section */
+#goal-section {
+  background-color: var(--brand-deepest-indigo);
+}
+
+#goal-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px 0;
+}
+
+#goal-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+#goal-ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  background-color: var(--brand-indigo-deep);
+  border: 1px solid var(--brand-cream);
+  border-radius: 10px;
+}
+
+.goal-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.goal-text h5, .goal-text p {
+  font-family: var(--inter-font);
+  color: var(--brand-cream);
+  margin: 0;
+}
+
+.goal-text h5 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.goal-text p {
+  font-size: 12px;
+}
+
+.remove-goal {
+  margin-left: 10px;
 }
 
 /* styles and classes */
