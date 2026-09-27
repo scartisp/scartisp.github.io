@@ -180,6 +180,7 @@ body img {
 
 .song-section-expand-list-span {
   white-space: nowrap;
+  font-size: 14px;
   color: var(--brand-indigo-deep);
   background-color: var(--brand-orange);
   padding: 5px;
