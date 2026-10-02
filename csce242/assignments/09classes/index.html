@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+
+<body>
+  <header id="main-head">
+    <h1>Vacations</h1>
+    <h2>Vacation Experiences</h2>
+  </header>
+
+  <section id="list-section"> 
+    <ul id="vacation-ul">
+    </ul>
+  </section>
+
+  <div id="vacation-modal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" id="modal-content">
+    <span id="modal-close" class="w3-button w3-display-topright">&times;</span>
+    <div class="w3-row">
+      <div class="w3-half" id="modal-map"></div>
+      <div class="w3-half w3-container" id="modal-info">
+        <h2 id="modal-name"></h2>
+        <p><strong>Type:</strong> <span id="modal-type"></span></p>
+        <p><strong>Description:</strong> <span id="modal-description"></span></p>
+        <p><strong>Things To Do:</strong> <span id="modal-todo"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer id="main-footer">@Simion Cartis</footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
