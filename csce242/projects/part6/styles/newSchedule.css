@@ -30,14 +30,15 @@ body img {
   justify-content: space-between;
   align-items: center;
   background-color: var(--brand-indigo);
-  padding-inline: 60px;
+  padding: 30px 60px 16px 60px;
   border-bottom: 3px solid var(--brand-orange);
 }
 
 #head-right {
   display: flex;
   flex-direction: row;
-  position: relative
+  position: relative;
+  align-items: center;
 }
 
 #head-right img {
@@ -58,19 +59,19 @@ body img {
   content: '';
   position: absolute;
   right: 0;
-  top: 25%;
-  height: 50%;
+  top: 0;
+  bottom: 0;
   width: 1px;
   background-color: var(--brand-cream);
-
 }
+
 
 #website-name h1 {
   font-family: var(--jua-font);
   color: var(--brand-cream);
   font-size: clamp(1.75rem, 11.58vw, 2.75rem);
   font-weight: 500;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 #website-name h2 {
@@ -78,15 +79,17 @@ body img {
   color: var(--brand-orange);
   font-weight: 500;
   font-size: clamp(1rem, 6.84vw, 1.625rem);
-  margin-top: 0;
+  margin: 0;
 }
 
 .main-navigation-ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  gap: 44px;
+  gap: 20px 44px;
   padding: 0;
+  margin: 0;
+  margin-top: 16px;
 }
 
 #main-navigation a {

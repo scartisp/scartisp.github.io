@@ -57,11 +57,10 @@ body img {
   content: '';
   position: absolute;
   right: 0;
-  top: 25%;
-  height: 50%;
+  top: 0;
+  bottom: 0;
   width: 1px;
   background-color: var(--brand-cream);
-
 }
 
 #website-name h1 {
