@@ -13,6 +13,9 @@ class Dog {
     section.append(this.dogName());
     section.append(this.dogImage());
 
+    const moreInfo = section.querySelector('.more-info');
+    moreInfo.classList.add('hidden');
+
     return section
   }
 
@@ -34,8 +37,11 @@ class Dog {
   }
 
   moreInfo() {
-    const ul = document.getElementById;
-    ul.append
+    const ul = document.createElement('ul');
+    
+    ul.append(this.liInfo('Breed', this.breed))
+    ul.append(this.liInfo('size', this.size))
+    ul.append(this.liInfo('Age', this.age))
 
   }
 
