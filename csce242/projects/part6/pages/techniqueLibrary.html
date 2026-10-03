@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonia Guitars</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="../styles/techniqueLibrary.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--main header-->
+  <header id="main-head">
+    <div id="head-right">
+      <img src="../images/Logo-mark.svg">
+      <div id="website-name">
+        <h1 class="uppercase letter-spacing-two">Harmonia</h1>
+        <h2 class="uppercase letter-spacing-two">Guitars</h2>
+      </div>
+    </div>
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./songLibrary.html">Song Library</a></li>
+        <li><a href="#" class="selected-page">Technique Library</a></li>
+        <li><a href="./scheduleLibrary.html">Schedule Library</a></li>
+        <li><a href="./newSchedule.html">New Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--search filter section-->
+  <section id="filter-section">
+    <div class="filter-type-div">
+      <p class="filter-header"><span class="filter-type-span">Difficulty</span> <span
+          class="filter-clear-span">clear</span> </p>
+      <p class="filter-description-p">show techniques at these levels</p>
+      <div class="filter-boxes-div">
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Level
+            1</span>
+          <span class="difficulty-dots-span">
+            <span class="filled-difficulty"></span> <span class="unfilled-difficulty"></span>
+            <span class="unfilled-difficulty"></span> <span class="unfilled-difficulty"></span>
+            <span class="unfilled-difficulty"></span>
+          </span>
+        </p>
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Level
+            2</span>
+          <span class="difficulty-dots-span">
+            <span class="filled-difficulty"></span> <span class="filled-difficulty"></span>
+            <span class="unfilled-difficulty"></span> <span class="unfilled-difficulty"></span>
+            <span class="unfilled-difficulty"></span>
+          </span>
+        </p>
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Level
+            2</span>
+          <span class="difficulty-dots-span">
+            <span class="filled-difficulty"></span> <span class="filled-difficulty"></span>
+            <span class="filled-difficulty"></span> <span class="unfilled-difficulty"></span>
+            <span class="unfilled-difficulty"></span>
+          </span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span class="filter-text-span">Level
+            2</span>
+          <span class="difficulty-dots-span">
+            <span class="filled-difficulty"></span> <span class="filled-difficulty"></span>
+            <span class="filled-difficulty"></span> <span class="filled-difficulty"></span>
+            <span class="unfilled-difficulty"></span>
+          </span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span class="filter-text-span">Level
+            2</span>
+          <span class="difficulty-dots-span">
+            <span class="filled-difficulty"></span> <span class="filled-difficulty"></span>
+            <span class="filled-difficulty"></span> <span class="filled-difficulty"></span>
+            <span class="filled-difficulty"></span>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="filter-type-div">
+      <p class="filter-header"><span class="filter-type-span">Genre</span> <span class="filter-clear-span">clear</span>
+      </p>
+      <p class="filter-description-p">show techniques at of these genres</p>
+      <div class="filter-boxes-div">
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Rock</span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Funk</span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Blues</span>
+        </p>
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Country</span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Metal</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="filter-type-div">
+      <p class="filter-header"><span class="filter-type-span">Type</span> <span class="filter-clear-span">clear</span>
+      </p>
+      <p class="filter-description-p">show techniques at of these types</p>
+      <div class="filter-boxes-div">
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Rhythm</span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Lead</span>
+        </p>
+        <p class="filter-option-p filter-option-p-selected"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Fretting Hand</span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Picking Hand</span>
+        </p>
+        <p class="filter-option-p"> <input type="checkbox" class="filter-checkbox"> <span
+            class="filter-text-span">Chords</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--main body-->
+  <section id="main-body-section">
+    <div class="technique-list-div">
+      <p class="technique-list-header uppercase">Rhythm Techniques</p>
+      <div class="technique-pills-div">
+        <div class="technique-div">
+          <p class="technique-title">Strumming</p>
+          <p class="technique-description"><span class="technique-type-span">Rhythm, Picking hand</span> · <span
+              class="technique-genre-span">Rock, Country</span> ·
+            <span class="technique-type-difficulty">1/5</span>
+          </p>
+        </div>
+
+        <div class="technique-div">
+          <p class="technique-title">Dead notes</p>
+          <p class="technique-description"><span class="technique-type-span">Rhythm, fretting hand</span> · <span
+              class="technique-genre-span">Rock</span> ·
+            <span class="technique-type-difficulty">2/5</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="technique-list-div">
+      <p class="technique-list-header uppercase">Fretting Hand Techniques</p>
+      <div class="technique-pills-div">
+        <div class="technique-div">
+          <p class="technique-title">open chords</p>
+          <p class="technique-description"><span class="technique-type-span">Rhythm, fretting hand</span> · <span
+              class="technique-genre-span">Rock, Country, blues</span> ·
+            <span class="technique-type-difficulty">1/5</span>
+          </p>
+        </div>
+
+        <div class="technique-div">
+          <p class="technique-title">Dead notes</p>
+          <p class="technique-description"><span class="technique-type-span">Rhythm, fretting hand</span> · <span
+              class="technique-genre-span">Rock</span> ·
+            <span class="technique-type-difficulty">2/5</span>
+          </p>
+        </div>
+
+        <div class="technique-div">
+          <p class="technique-title">Hammer on</p>
+          <p class="technique-description"><span class="technique-type-span">Lead, fretting hand</span> · <span
+              class="technique-genre-span">Any</span> ·
+            <span class="technique-type-difficulty">2/5</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

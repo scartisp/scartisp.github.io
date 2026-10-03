@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonia Guitars</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="../styles/newSchedule.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--main header-->
+  <header id="main-head">
+    <div id="head-right">
+      <img src="../images/Logo-mark.svg">
+      <div id="website-name">
+        <h1 class="uppercase letter-spacing-two">Harmonia</h1>
+        <h2 class="uppercase letter-spacing-two">Guitars</h2>
+      </div>
+    </div>
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./songLibrary.html">Song Library</a></li>
+        <li><a href="./techniqueLibrary.html">Technique Library</a></li>
+        <li><a href="./scheduleLibrary.html">Schedule Library</a></li>
+        <li><a href="#" class="selected-page">New Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--title section-->
+  <section id="title-section">
+    <div id="title-right-div">
+      <h3 id="title-h3" class="uppercase letter-spacing-two">Example Schedule</h3>
+      <p id="practice-description-p">This is an example of what a new practice could look like</p>
+      <div id="week-div">
+        <ul id="days-ul">
+          <li class="selected-day-li">
+            <p class="day-p uppercase selected-day">sun</p>
+            <div class="dot-div selected-day-dot"></div>
+          </li>
+          <li class="selected-day-li">
+            <p class="day-p uppercase selected-day">mon</p>
+            <div class="dot-div selected-day-dot"></div>
+          </li>
+          <li class="unselected-day-li">
+            <p class="day-p uppercase unselected-day">tue</p>
+            <div class="dot-div unselected-day-dot"></div>
+          </li>
+          <li class="selected-day-li">
+            <p class="day-p uppercase selected-day">wed</p>
+            <div class="dot-div selected-day-dot"></div>
+          </li>
+          <li class="selected-day-li">
+            <p class="day-p uppercase selected-day">thu</p>
+            <div class="dot-div selected-day-dot"></div>
+          </li>
+          <li class="unselected-day-li">
+            <p class="day-p uppercase unselected-day">fri</p>
+            <div class="dot-div unselected-day-dot"></div>
+          </li>
+          <li class="selected-day-li">
+            <p class="day-p uppercase selected-day">sat</p>
+            <div class="dot-div selected-day-dot"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="title-left-div">
+      <div id="title-left-top-div">
+        <div id="public-setting-div">
+          <h3 class="uppercase letter-spacing-two">public</h3>
+          <img src="../images/Toggle Switch.png">
+        </div>
+        <img src="../images/download-orange.png">
+      </div>
+      <div id="title-left-bottom-div">
+        <h3 class="uppercase letter-spacing-two">total time</h3>
+        <p>3hr 10min</p>
+      </div>
+    </div>
+  </section>
+
+  <!--main body-->
+  <section id="main-body">
+    <ul id="main-body-ul">
+      <li class="day-li">
+        <div class="day-metadata">
+          <h3 class="day-title uppercase letter-spacing-two">sun</h3>
+          <p class="day-description"> <span>2 techniques</span> · <span>1 song</span></p>
+          <div class="day-rightmost-div">
+            <p class="day-time"> <img src="../images/clock-white.png"> 40 min</p>
+            <img src="../images/arrow-down-white.png">
+          </div>
+        </div>
+      </li>
+      <li class="day-li">
+        <div class="day-metadata">
+          <h3 class="day-title uppercase letter-spacing-two">mon</h3>
+          <p class="day-description"> <span>5 techniques</span> · <span>3 songs</span></p>
+          <div class="day-rightmost-div">
+            <p class="day-time"> <img src="../images/clock-white.png"> 1 hr</p>
+            <img src="../images/arrow-down-white.png">
+          </div>
+        </div>
+      </li>
+      <li class="day-li">
+        <div class="day-metadata">
+          <h3 class="day-title uppercase letter-spacing-two">wed</h3>
+          <p class="day-description"> <span>3 techniques</span><span></span></p>
+          <div class="day-rightmost-div">
+            <p class="day-time"> <img src="../images/clock-white.png"> 30 min</p>
+            <img src="../images/arrow-down-white.png">
+          </div>
+        </div>
+      </li>
+
+      <li class="day-li opened-day-li">
+        <div class="day-metadata">
+          <h3 class="day-title uppercase letter-spacing-two">thu</h3>
+          <p class="day-description"> <span>3 techniques</span> · <span>1 song</span></p>
+          <div class="day-rightmost-div">
+            <p class="day-time"> <img src="../images/clock-white.png"> 30 min</p>
+            <img src="../images/arrow-down-orange.png">
+          </div>
+        </div>
+        <div class="opened-day-content">
+          <div class="content-pill">
+            <div class="dot-grid">
+              <span></span><span></span>
+              <span></span><span></span>
+              <span></span><span></span>
+            </div>
+            <div class="item-description-div">
+              <h4>Legato</h4>
+              <p><span>right hand</span> · <span>any</span> · <span>4/5</span></p>
+            </div>
+            <p class="item-type technique uppercase">Technique</p>
+            <p class="item-time">
+              <img src="../images/white-minus.png">
+              <span>5 min</span>
+              <img src="../images/plus-orange.png">
+            </p>
+            <img src="../images/x-white.png">
+          </div>
+
+          <div class="content-pill">
+            <div class="dot-grid">
+              <span></span><span></span>
+              <span></span><span></span>
+              <span></span><span></span>
+            </div>
+            <img src="../images/song-library-imgs/leper-img.png" class="song-image">
+            <div class="item-description-div">
+              <h4>The Leper Affinity- Opeth</h4>
+              <p>metal</p>
+            </div>
+            <p class="item-type song uppercase">song</p>
+            <p class="item-time">
+              <img src="../images/white-minus.png">
+              <span>15 min</span>
+              <img src="../images/plus-orange.png">
+            </p>
+            <img src="../images/x-white.png">
+          </div>
+
+          <div class="content-pill content-pill-nested">
+            <div class="dot-grid">
+              <span></span><span></span>
+              <span></span><span></span>
+              <span></span><span></span>
+            </div>
+            <div class="item-description-div">
+              <h4>Sweep picking</h4>
+              <p><span>lead, left hand</span> · <span>metal, jazz</span> · <span>5/5</span></p>
+            </div>
+            <p class="item-type technique uppercase">technique</p>
+            <p class="item-time">
+              <img src="../images/white-minus.png">
+              <span>15 min</span>
+              <img src="../images/plus-orange.png">
+            </p>
+            <img src="../images/x-white.png">
+          </div>
+
+          <div class="content-pill content-pill-nested">
+            <div class="dot-grid">
+              <span></span><span></span>
+              <span></span><span></span>
+              <span></span><span></span>
+            </div>
+            <div class="item-description-div">
+              <h4>Syncopation</h4>
+              <p><span>rhythm</span> · <span>any</span> · <span>3/5</span></p>
+            </div>
+            <p class="item-type technique uppercase">technique</p>
+            <p class="item-time">
+              <img src="../images/white-minus.png">
+              <span>15 min</span>
+              <img src="../images/plus-orange.png">
+            </p>
+            <img src="../images/x-white.png">
+          </div>
+
+          <img src="../images/plus-orange-large.png" class="add-content">
+        </div>
+      </li>
+
+      <li class="day-li">
+        <div class="day-metadata">
+          <h3 class="day-title uppercase letter-spacing-two">sat</h3>
+          <p class="day-description"> <span>2 techniques</span> · <span>1 song</span></p>
+          <div class="day-rightmost-div">
+            <p class="day-time"> <img src="../images/clock-white.png"> 40 min</p>
+            <img src="../images/arrow-down-white.png">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!--goals section-->
+  <section id="goal-section">
+    <div id="goal-content">
+      <ul id="goal-ul">
+        <li>
+          <img src="../images/flag-orange.png">
+          <div class="goal-text">
+            <h5>Learn Leper Affinity solo</h5>
+            <p><span>target</span> <span>Sept 15</span></p>
+          </div>
+          <img src="../images/x-white.png" class="remove-goal">
+        </li>
+        <li>
+          <img src="../images/flag-orange.png">
+          <div class="goal-text">
+            <h5>Finish the wireframe</h5>
+            <p><span>target</span> <span>Sept 13</span></p>
+          </div>
+          <img src="../images/x-white.png" class="remove-goal">
+        </li>
+      </ul>
+      <img src="../images/plus-orange-large.png" id="add-goal">
+    </div>
+  </section>
+</body>
+
+</html>

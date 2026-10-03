@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonia Guitars</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="../styles/scheduleLibrary.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--main header-->
+  <header id="main-head">
+    <div id="head-right">
+      <img src="../images/Logo-mark.svg">
+      <div id="website-name">
+        <h1 class="uppercase letter-spacing-two">Harmonia</h1>
+        <h2 class="uppercase letter-spacing-two">Guitars</h2>
+      </div>
+    </div>
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./songLibrary.html">Song Library</a></li>
+        <li><a href="./techniqueLibrary.html">Technique Library</a></li>
+        <li><a href="#" class="selected-page">Schedule Library</a></li>
+        <li><a href="./newSchedule.html">New Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--search bar-->
+  <section id="search-bar-section">
+    <div id="search-bar-div">
+      <img src="../images/eyeglass.png">
+      <input type="search" id="search-bar-input" placeholder="Search Schedules by name, technique, or song">
+      <button id="search-bar-button" class="uppercase">Search<img src="../images/arrow-right-indigo-deep.png">
+      </button>
+    </div>
+    <p id="search-in-p">
+      Search in: <span class="selected">All</span> <span class="unselected">Schedule name</span>
+      <span class="unselected">Technqiues</span> <span class="unselected">Songs</span>
+    </p>
+    <div id="active-filters-div">Must include:
+      <p><span>Technique:</span>Palm Muting<img src="../images/x-white.png"></p>
+      <p><span>Technique:</span>Strumming<img src="../images/x-white.png"></p>
+      <p><span>Song:</span>Harvest<img src="../images/x-white.png"></p>
+      <img src="../images/plus-white.png">
+      <span id="clear-all-span">clear all</span>
+    </div>
+  </section>
+
+  <!--schedule list-->
+  <section class="schedule-section">
+    <p class="schedule-section-header-p"><span class="schedule-section-title-span uppercase">recommended schedule</span>
+      <span class="schedule-section-expand-list-span">Expand List</span>
+    </p>
+    <div class="schedule-card-grid-div">
+      <div class="schedule-card-div">
+        <img src="../images/schedule-library-images/beginner.png" class="schedule-card-img">
+        <div class="schedule-card-title-div">
+          <p class="schedule-title-p">Beginner Schedule</p>
+          <div class="hour-div">
+            <p class="num-of-hours-p">3</p>
+            <p class="hours-p uppercase">hours</p>
+          </div>
+        </div>
+        <p class="metadata-title-p uppercase">techniques</p>
+        <div class="metadata-list-div">
+          <p>Open chords</p>
+          <p>Strumming</p>
+        </div>
+        <p class="metadata-title-p uppercase">Songs</p>
+        <div class="metadata-list-div">
+          <p>Marry Had a Little Lamb</p>
+        </div>
+      </div>
+
+      <div class="schedule-card-div">
+        <img src="../images/schedule-library-images/rhythm.png" class="schedule-card-img">
+        <div class="schedule-card-title-div">
+          <p class="schedule-title-p">Learn Rhythm Guitar</p>
+          <div class="hour-div">
+            <p class="num-of-hours-p">5</p>
+            <p class="hours-p uppercase">hours</p>
+          </div>
+        </div>
+        <p class="metadata-title-p uppercase">techniques</p>
+        <div class="metadata-list-div">
+          <p>Open chords</p>
+          <p>Palm muting</p>
+          <p>Strumming</p>
+          <p>Barre chords</p>
+        </div>
+        <p class="metadata-title-p uppercase">Songs</p>
+        <div class="metadata-list-div">
+          <p>Don't Fear The Reaper</p>
+          <p>Harvest</p>
+        </div>
+      </div>
+
+       <div class="schedule-card-div">
+        <img src="../images/schedule-library-images/lead.png" class="schedule-card-img">
+        <div class="schedule-card-title-div">
+          <p class="schedule-title-p">Learn Lead Guitar</p>
+          <div class="hour-div">
+            <p class="num-of-hours-p">5</p>
+            <p class="hours-p uppercase">hours</p>
+          </div>
+        </div>
+        <p class="metadata-title-p uppercase">techniques</p>
+        <div class="metadata-list-div">
+          <p>arpeggios</p>
+          <p>alternate picking</p>
+          <p>scales</p>
+        </div>
+        <p class="metadata-title-p uppercase">Songs</p>
+        <div class="metadata-list-div">
+          <p>Machine</p>
+          <p>The Audacity</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
