@@ -498,7 +498,8 @@ body img {
   flex-direction: column;
 }
 
-.goal-text h5, .goal-text p {
+.goal-text h5,
+.goal-text p {
   font-family: var(--inter-font);
   color: var(--brand-cream);
   margin: 0;
@@ -611,15 +612,14 @@ body img {
     width: 50%;
     margin-top: 10px;
   }
-  
-  #toggle-nav-div h3 {
-      font-family: var(--inter-font );
-      color: var(--brand-cream);
-      font-size: 25px;
-      font-weight: 400;
-      margin: 0;
 
-    }
+  #toggle-nav-div h3 {
+    font-family: var(--inter-font);
+    color: var(--brand-cream);
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+  }
 
   .is-active {
     display: flex;
@@ -633,5 +633,4 @@ body img {
   #toggle-nav-img:hover {
     cursor: pointer;
   }
-
 }
