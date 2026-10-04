@@ -185,10 +185,10 @@ body img {
 /* carousel */
 
 #carousel-section {
+  box-sizing: border-box;
   background-color: var(--brand-indigo);
   width: 100%;
-  padding-top: 34px;
-  padding-bottom: 26px;
+  padding: 25px 20px;
   border-bottom: 3px solid var(--brand-orange);
 }
 
@@ -197,7 +197,6 @@ body img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-inline: 10px;
 }
 
 #carousel-content-div>img {
@@ -207,7 +206,7 @@ body img {
 }
 
 #card-ul {
-  --visible: 4;
+  --visible: 5;
   --gap: 24px;
   display: flex;
   flex-direction: row;
@@ -230,6 +229,7 @@ body img {
   background-size: cover;
   background-position: center;
   container-type: inline-size;
+  border-radius: 12px;
 }
 
 .genre-card p {
@@ -241,9 +241,10 @@ body img {
   width: 100%;
   gap: 3.7cqw;
   margin: 0;
-  padding-inline: 7.4cqw 8.9cqw;
-  padding-bottom: 6.7cqw;
+  margin-inline: 7.4cqw 8.9cqw;
+  margin-bottom: 6.7cqw;
   color: var(--brand-cream);
+  background-color: rgba(61, 74, 124, .5);
 }
 
 .genre-card p img {
@@ -260,21 +261,16 @@ body img {
   margin-left: auto;
 }
 
-#rock-card {
-  background-image: url(../images/genre-images/rock.png);
-}
-
-#blues-card {
-  background-image: url(../images/genre-images/blues.png);
-}
-
-#country-card {
-  background-image: url(../images/genre-images/country.png);
-}
-
-#funk-card {
-  background-image: url(../images/genre-images/funk.png);
-}
+#rock-card { background-image: url(../images/genre-images/rock.png); }
+#blues-card { background-image: url(../images/genre-images/blues.png); }
+#country-card { background-image: url(../images/genre-images/country.png); }
+#funk-card { background-image: url(../images/genre-images/funk.png); }
+#jazz-card { background-image: url(../images/genre-images/jazz.png); }
+#metal-card { background-image: url(../images/genre-images/metal.png); }
+#pop-card { background-image: url(../images/genre-images/pop.png); }
+#punk-card { background-image: url(../images/genre-images/punk.png); }
+#folk-card { background-image: url(../images/genre-images/folk.png); }
+#r-and-b-card { background-image: url(../images/genre-images/r-and-b.png); }
 
 #carousel-dots-div {
   display: flex;
@@ -282,6 +278,10 @@ body img {
   align-self: center;
   justify-self: center;
   gap: 8px;
+}
+
+#carousel-dots-div div {
+  cursor: pointer;
 }
 
 .selected {
@@ -533,6 +533,10 @@ body img {
     width: auto;
     height: 1px;
     background-color: var(--brand-cream);
+  }
+
+  #card-ul {
+    --visible: 4;
   }
 }
 
