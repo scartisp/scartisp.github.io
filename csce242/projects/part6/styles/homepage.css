@@ -24,6 +24,7 @@ body img {
 /*header*/
 
 #main-head {
+  box-sizing: border-box;
   border-bottom: 3px solid var(--brand-orange);
   padding: 25px 20px;
 }
@@ -314,7 +315,7 @@ body img {
 }
 
 #bottom-section-content-left-div {
-position: relative;
+  position: relative;
 }
 
 #bottom-section-guitar-img {
@@ -415,13 +416,20 @@ position: relative;
     flex-direction: column;
   }
 
+  #head-right {
+    padding-bottom: 5px;
+  }
+
   #website-name {
     padding-right: 0;
-    padding-bottom: 5px;
   }
 
   #website-name::after {
     display: none;
+  }
+
+  #website-name h2 {
+    margin-left: auto;
   }
 
   #head-right::after {
@@ -471,19 +479,32 @@ here. This is why there's a separate media query with a diff of 20 px*/
 }
 
 @media (max-width:700px) {
+#main-head-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
 
-  .main-navigation-ul {
-    display: none;
-  }
+#head-right,
+#toggle-nav-div,
+#main-navigation {
+  grid-column: 2;
+}
 
-  #toggle-nav-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 10px;
-  }
+#toggle-nav-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+#main-head-container:has(.toggle-nav-click)::after {
+  content: '';
+  grid-column: 1 / -1;
+  grid-row: 3;
+  height: 3px;
+  background-color: var(--brand-orange);
+}
 
   #toggle-nav-div h3 {
     font-family: var(--inter-font);
@@ -492,10 +513,6 @@ here. This is why there's a separate media query with a diff of 20 px*/
     font-weight: 400;
     margin: 0;
 
-  }
-
-  .is-active {
-    display: flex;
   }
 
   #toggle-nav-img {
@@ -507,10 +524,34 @@ here. This is why there's a separate media query with a diff of 20 px*/
     cursor: pointer;
   }
 
+  .main-navigation-ul {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+  }
+
+  .is-active {
+    display: flex;
+  }
+
+  .nav-divider {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--brand-cream);
+  }
+
+  .nav-divider-selected {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--brand-orange);
+  }
+
+  #main-navigation a.selected-page {
+    text-decoration: none;
+  }
+
   #card-ul {
     --visible: 2;
   }
-
 
   #horizontal-line {
     margin-left: 15px;
@@ -524,16 +565,9 @@ here. This is why there's a separate media query with a diff of 20 px*/
   #practice-img {
     width: calc(100% - 30px);
   }
-
-  /* .content-div {
-    padding-inline: 15px;
-  } */
 }
 
 @media (max-width: 450px) {
-  #main-head {
-    padding-inline: 0;
-  }
 
   #main-hero-content-div {
     display: flex;
@@ -566,12 +600,5 @@ here. This is why there's a separate media query with a diff of 20 px*/
   #bottom-section-tagline-p,
   #bottom-section-tagline-p {
     text-align: center;
-  }
-}
-
-@media (max-width: 400px) {
-  .main-navigation-ul {
-    flex-direction: column;
-    align-items: center;
   }
 }
