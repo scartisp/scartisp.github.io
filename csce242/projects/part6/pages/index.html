@@ -18,28 +18,30 @@
 <body>
   <!--main header-->
   <header id="main-head">
-    <div id="head-right">
-      <img src="../images/Logo-mark.svg">
-      <div id="website-name">
-        <h1 class="uppercase letter-spacing-two">Harmonia</h1>
-        <h2 class="uppercase letter-spacing-two">Guitars</h2>
+    <div id="main-head-container">
+      <div id="head-right">
+        <img src="../images/Logo-mark.svg">
+        <div id="website-name">
+          <h1 class="uppercase letter-spacing-two">Harmonia</h1>
+          <h2 class="uppercase letter-spacing-two">Guitars</h2>
+        </div>
       </div>
+      <div id="toggle-nav-div">
+        <h3 class="letter-spacing-two">Nav</h3>
+        <img src="../images/hamburger-menu.png" id="toggle-nav-img">
+      </div>
+      <nav id="main-navigation">
+        <ul class="main-navigation-ul">
+          <li><a href="#" class="selected-page">Home</a></li>
+          <li><a href="./songLibrary.html">Song Library</a></li>
+          <li><a href="./techniqueLibrary.html">Technique Library</a></li>
+          <li><a href="./scheduleLibrary.html">Schedule Library</a></li>
+          <li><a href="./newSchedule.html">New Schedule</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="toggle-nav-div">
-      <h3 class="letter-spacing-two">Nav</h3>
-      <img src="../images/hamburger-menu.png" id="toggle-nav-img">
-    </div>
-    <nav id="main-navigation">
-      <ul class="main-navigation-ul">
-        <li><a href="#" class="selected-page">Home</a></li>
-        <li><a href="./songLibrary.html">Song Library</a></li>
-        <li><a href="./techniqueLibrary.html">Technique Library</a></li>
-        <li><a href="./scheduleLibrary.html">Schedule Library</a></li>
-        <li><a href="./newSchedule.html">New Schedule</a></li>
-      </ul>
-    </nav>
   </header>
-  
+
   <!--main hero-->
   <section id="main-hero-section">
     <div id="main-hero-content-div" class="content-div">
@@ -60,7 +62,8 @@
       <img src="../images/carousel-prev-arrow.png">
       <ul id="card-ul">
         <li id="rock-card" class="genre-card">
-          <p class="letter-spacing-two"><img src="../images/genre-icons/guitar.png">rock<img src="../images/arrow-right-orange.png"></p>
+          <p class="letter-spacing-two"><img src="../images/genre-icons/guitar.png">rock<img
+              src="../images/arrow-right-orange.png"></p>
         </li>
         <li id="blues-card" class="genre-card">
           <p><img src="../images/genre-icons/fedora.png">blues<img src="../images/arrow-right-orange.png"></p>
@@ -85,9 +88,9 @@
 
   <!--homepage bottom-->
   <section id="bottom-section">
-    <hr id="horizontal-line">
     <div id="bottom-section-content-div" class="content-div">
       <div id="bottom-section-content-left-div">
+        <hr id="horizontal-line">
         <img src="../images/guitar-outline.png" id="bottom-section-guitar-img">
         <p id="bottom-section-tagline-p" class="uppercase tagline-text">get started with our <br><span
             id="bottom-section-tagline-span">community currated <br></span>song and schedule libraries</p>

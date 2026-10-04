@@ -25,14 +25,21 @@ body img {
 /*header*/
 
 #main-head {
+  border-bottom: 3px solid var(--brand-orange);
+  padding: 25px 20px;
+}
+
+#main-head-container {
   display: flex;
   flex-direction: row;
+  justify-self: center;
   justify-content: space-between;
   align-items: center;
   background-color: var(--brand-indigo);
-  padding: 30px 60px 16px 60px;
-  border-bottom: 3px solid var(--brand-orange);
+  width: 100%;
+  max-width: 2000px;
 }
+
 
 #head-right {
   display: flex;
@@ -107,18 +114,23 @@ body img {
 /*search filter section*/
 
 #filter-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: clamp(24px, 50vw - 430px, 155px);
-  width: 100%;
-  padding-inline: 20px;
-  padding-block: 27px;
   box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
   background-color: var(--brand-deepest-indigo);
   border-bottom: 3px solid var(--brand-orange);
   padding-top: 27px;
   padding-bottom: 27px;
+}
+
+#filter-section-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .filter-type-div {
@@ -245,14 +257,19 @@ body img {
 /* main body section*/
 
 #main-body-section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
+}
+
+#main-body-container {
   display: flex;
   flex-direction: column;
   gap: 60px;
   justify-self: center;
-  width: 90%;
-  margin-top: 24px;
+  width: 100%;
+  max-width: 1300px;
 }
-
 
 .technique-pills-div {
   display: flex;
@@ -324,7 +341,7 @@ body img {
 /* responsive design */
 
 @media (max-width: 1360px) {
-  #main-head {
+  #main-head-container {
     flex-direction: column;
   }
 
@@ -345,16 +362,16 @@ body img {
   }
 }
 
-@media (max-width: 1100px) {
-
-  #search-bar-input {
-    width: clamp(120px, 100vw, 800px);
-  }
-}
-
 @media (max-width: 1020px) {
   #main-navigation ul {
     justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #filter-section-container {
+    justify-content: center;
+    gap: clamp(24px, 50vw - 430px, 155px);
   }
 }
 

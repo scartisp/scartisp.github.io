@@ -18,98 +18,104 @@
 <body>
   <!--main header-->
   <header id="main-head">
-    <div id="head-right">
-      <img src="../images/Logo-mark.svg">
-      <div id="website-name">
-        <h1 class="uppercase letter-spacing-two">Harmonia</h1>
-        <h2 class="uppercase letter-spacing-two">Guitars</h2>
+    <div id="main-head-container">
+      <div id="head-right">
+        <img src="../images/Logo-mark.svg">
+        <div id="website-name">
+          <h1 class="uppercase letter-spacing-two">Harmonia</h1>
+          <h2 class="uppercase letter-spacing-two">Guitars</h2>
+        </div>
       </div>
+      <div id="toggle-nav-div">
+        <h3 class="letter-spacing-two">Nav</h3>
+        <img src="../images/hamburger-menu.png" id="toggle-nav-img">
+      </div>
+      <nav id="main-navigation">
+        <ul class="main-navigation-ul">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./songLibrary.html" class="selected-page">Song Library</a></li>
+          <li><a href="./techniqueLibrary.html">Technique Library</a></li>
+          <li><a href="./scheduleLibrary.html">Schedule Library</a></li>
+          <li><a href="./newSchedule.html">New Schedule</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="toggle-nav-div">
-      <h3 class="letter-spacing-two">Nav</h3>
-      <img src="../images/hamburger-menu.png" id="toggle-nav-img">
-    </div>
-    <nav id="main-navigation">
-      <ul class="main-navigation-ul">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./songLibrary.html" class="selected-page">Song Library</a></li>
-        <li><a href="./techniqueLibrary.html">Technique Library</a></li>
-        <li><a href="./scheduleLibrary.html">Schedule Library</a></li>
-        <li><a href="./newSchedule.html">New Schedule</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!--search bar-->
   <section id="search-bar-section">
-    <img id="menu-img" src="../images/hamburger-menu.png">
-    <div id="search-bar-div">
-      <img src="../images/eyeglass.png">
-      <input type="search" id="search-bar-input" placeholder="Search by song name">
-      <button id="search-bar-button" class="uppercase">Search <img src="../images/arrow-right-indigo-deep.png">
-      </button>
+    <div id="search-bar-container">
+      <img id="menu-img" src="../images/hamburger-menu.png">
+      <div id="search-bar-div">
+        <img src="../images/eyeglass.png">
+        <input type="search" id="search-bar-input" placeholder="Search by song name">
+        <button id="search-bar-button" class="uppercase">Search <img src="../images/arrow-right-indigo-deep.png">
+        </button>
+      </div>
     </div>
   </section>
 
   <!--song list-->
   <section class="song-section">
-    <p class="song-section-header-p"><span class="song-section-title-span uppercase">top songs</span>
-      <span class="song-section-expand-list-span">Expand List</span>
-    </p>
-    <div class="song-card-grid-div">
-      <div class="song-card-div">
-        <img src="../images/song-library-imgs/leper-img.png" class="song-card-img">
-        <p class="genre-p uppercase">metal</p>
-        <div class="song-card-title-div">
-          <p class="song-title-p">The Leper Affinity- Opeth</p>
-          <div class="rating-div">
-            <p><span class="user-rating-span">10</span>/10</p>
-            <p class="uppercase">rating</p>
+    <div class="song-container">
+      <p class="song-container-header-p"><span class="song-container-title-span uppercase">top songs</span>
+        <span class="song-container-expand-list-span">Expand List</span>
+      </p>
+      <div class="song-card-grid-div">
+        <div class="song-card-div">
+          <img src="../images/song-library-imgs/leper-img.png" class="song-card-img">
+          <p class="genre-p uppercase">metal</p>
+          <div class="song-card-title-div">
+            <p class="song-title-p">The Leper Affinity- Opeth</p>
+            <div class="rating-div">
+              <p><span class="user-rating-span">10</span>/10</p>
+              <p class="uppercase">rating</p>
+            </div>
           </div>
+          <p class="technique-title-p uppercase">techniques</p>
+          <div class="technique-list-div">
+            <p>Sweep picking</p>
+            <p>Syncopation</p>
+          </div>
+          <p class="song-link-p"> <img src="../images/play.png"> <a href="#">Listen on YouTube</a></p>
         </div>
-        <p class="technique-title-p uppercase">techniques</p>
-        <div class="technique-list-div">
-          <p>Sweep picking</p>
-          <p>Syncopation</p>
-        </div>
-        <p class="song-link-p"> <img src="../images/play.png"> <a href="#">Listen on YouTube</a></p>
-      </div>
 
-      <div class="song-card-div">
-        <img src="../images/song-library-imgs/miles.png" class="song-card-img">
-        <p class="genre-p uppercase">jazz</p>
-        <div class="song-card-title-div">
-          <p class="song-title-p">Miles Beyond- Mahavishnu Orchestra</p>
-          <div class="rating-div">
-            <p><span class="user-rating-span">9</span>/10</p>
-            <p class="uppercase">rating</p>
+        <div class="song-card-div">
+          <img src="../images/song-library-imgs/miles.png" class="song-card-img">
+          <p class="genre-p uppercase">jazz</p>
+          <div class="song-card-title-div">
+            <p class="song-title-p">Miles Beyond- Mahavishnu Orchestra</p>
+            <div class="rating-div">
+              <p><span class="user-rating-span">9</span>/10</p>
+              <p class="uppercase">rating</p>
+            </div>
           </div>
+          <p class="technique-title-p uppercase">techniques</p>
+          <div class="technique-list-div">
+            <p>Hammer on</p>
+            <p>Bends</p>
+            <p>tremelo picking</p>
+          </div>
+          <p class="song-link-p"> <img src="../images/play.png"> <a href="#">Listen on YouTube</a></p>
         </div>
-        <p class="technique-title-p uppercase">techniques</p>
-        <div class="technique-list-div">
-          <p>Hammer on</p>
-          <p>Bends</p>
-          <p>tremelo picking</p>
-        </div>
-        <p class="song-link-p"> <img src="../images/play.png"> <a href="#">Listen on YouTube</a></p>
-      </div>
 
-      <div class="song-card-div">
-        <img src="../images/song-library-imgs/thrill.png" class="song-card-img">
-        <p class="genre-p uppercase">blues</p>
-        <div class="song-card-title-div">
-          <p class="song-title-p">The Thrill is Gone- B.B. King</p>
-          <div class="rating-div">
-            <p><span class="user-rating-span">10</span>/10</p>
-            <p class="uppercase">rating</p>
+        <div class="song-card-div">
+          <img src="../images/song-library-imgs/thrill.png" class="song-card-img">
+          <p class="genre-p uppercase">blues</p>
+          <div class="song-card-title-div">
+            <p class="song-title-p">The Thrill is Gone- B.B. King</p>
+            <div class="rating-div">
+              <p><span class="user-rating-span">10</span>/10</p>
+              <p class="uppercase">rating</p>
+            </div>
           </div>
+          <p class="technique-title-p uppercase">techniques</p>
+          <div class="technique-list-div">
+            <p>bends</p>
+            <p>staccoto</p>
+          </div>
+          <p class="song-link-p"> <img src="../images/play.png"> <a href="#">Listen on YouTube</a></p>
         </div>
-        <p class="technique-title-p uppercase">techniques</p>
-        <div class="technique-list-div">
-          <p>bends</p>
-          <p>staccoto</p>
-        </div>
-        <p class="song-link-p"> <img src="../images/play.png"> <a href="#">Listen on YouTube</a></p>
       </div>
     </div>
   </section>

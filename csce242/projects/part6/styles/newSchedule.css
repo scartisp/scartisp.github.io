@@ -25,13 +25,19 @@ body img {
 /*header*/
 
 #main-head {
+  border-bottom: 3px solid var(--brand-orange);
+  padding: 25px 20px;
+}
+
+#main-head-container {
   display: flex;
   flex-direction: row;
+  justify-self: center;
   justify-content: space-between;
   align-items: center;
   background-color: var(--brand-indigo);
-  padding: 30px 60px 16px 60px;
-  border-bottom: 3px solid var(--brand-orange);
+  width: 100%;
+  max-width: 2000px;
 }
 
 #head-right {
@@ -106,16 +112,22 @@ body img {
 
 /* title section*/
 #title-section {
+  background-color: var(--brand-deepest-indigo);
+  border-bottom: 3px solid var(--brand-orange);
+  padding: 25px 20px;
+}
+
+#title-section-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-self: center;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  max-width: 1300px;
   box-sizing: border-box;
-  padding: 14px 40px 38px 70px;
-  background-color: var(--brand-deepest-indigo);
-  border-bottom: 3px solid var(--brand-orange);
 }
 
 #title-right-div {
@@ -206,6 +218,7 @@ body img {
 #title-left-div {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 
 #title-left-top-div {
@@ -254,7 +267,7 @@ body img {
 
 /* main body */
 #main-body {
-  padding: 42px 10%;
+  padding: 42px 20px 42px 20px;
   border-bottom: 3px solid var(--brand-orange);
 }
 
@@ -262,9 +275,12 @@ body img {
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-self: center;
   gap: 10px;
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .day-li {
@@ -275,6 +291,7 @@ body img {
   border: 1px solid var(--brand-cream);
   border-radius: 18px;
   background-color: var(--brand-indigo-deep);
+  width: 100%;
 }
 
 .opened-day-li {
@@ -457,17 +474,17 @@ body img {
 /* goal-section */
 #goal-section {
   background-color: var(--brand-deepest-indigo);
+  padding: 18px 20px;
 }
 
 #goal-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-self: center;
+  justify-self: center;
   align-items: center;
   justify-content: center;
   gap: 14px;
-  padding: 18px 0;
 }
 
 #goal-ul {
@@ -545,7 +562,7 @@ body img {
 /* responsive design */
 
 @media (max-width: 1360px) {
-  #main-head {
+  #main-head-container {
     flex-direction: column;
   }
 
@@ -566,10 +583,10 @@ body img {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
 
   #title-section {
-    padding-left: 40px;
+    /* padding-left: 40px; */
     justify-content: center;
   }
 
