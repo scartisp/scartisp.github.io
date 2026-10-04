@@ -345,6 +345,11 @@ body img {
     flex-direction: column;
   }
 
+  #website-name {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
   #website-name::after {
     display: none;
   }
@@ -354,8 +359,8 @@ body img {
     position: absolute;
     top: auto;
     bottom: 0;
-    right: 10%;
-    left: 10%;
+    right: 0;
+    left: 0;
     width: auto;
     height: 1px;
     background-color: var(--brand-cream);
@@ -408,5 +413,12 @@ body img {
 
   #toggle-nav-img:hover {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-navigation-ul {
+    flex-direction: column;
+    align-items: center;
   }
 }

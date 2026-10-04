@@ -111,6 +111,8 @@ body img {
 }
 
 /* search section*/
+
+
 #search-bar-section {
   background-color: var(--brand-deepest-indigo);
   padding: 25px 20px;
@@ -118,18 +120,11 @@ body img {
 }
 
 #search-bar-container {
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: min(1300px, 100%);
   justify-content: center;
-  position: relative;
-  width: 100%;
-  max-width: 1300px;
-}
-
-#menu-img {
-  position: absolute;
-  left: 1%;
+  row-gap: 20px;
+  box-sizing: border-box;
 }
 
 #search-bar-div {
@@ -143,7 +138,7 @@ body img {
 
 #search-bar-input {
   font-family: var(--inter-font);
-  width: 800px;
+  flex: 1;
   min-width: 0;
   background-color: transparent;
   border: none;
@@ -164,8 +159,63 @@ body img {
   border-radius: 6px;
 }
 
-#search-bar-button img {
-  padding-left: 10px;
+#search-in-p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--inter-font);
+  font-size: 14px;
+  color: var(--brand-cream);
+  margin: 0;
+}
+
+#search-in-p span {
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.unselected {
+  background-color: transparent;
+  border: 1px solid var(--brand-cream);
+}
+
+.selected {
+  color: var(--brand-indigo-deep);
+  background-color: var(--brand-orange);
+  border: none;
+}
+
+#active-filters-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: var(--inter-font);
+  color: var(--brand-cream);
+  font-size: 14px;
+  gap: 8px;
+
+}
+
+#active-filters-div p {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 0;
+  background-color: var(--brand-indigo);
+  padding: 6px 12px;
+  border-radius: 12px;
+  gap: 6px;
+}
+
+#active-filters-div span {
+  color: var(--brand-orange);
+}
+
+#clear-all-span {
+  text-decoration: underline;
 }
 
 /*song section*/
@@ -359,6 +409,11 @@ body img {
     flex-direction: column;
   }
 
+  #website-name {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
   #website-name::after {
     display: none;
   }
@@ -368,8 +423,8 @@ body img {
     position: absolute;
     top: auto;
     bottom: 0;
-    right: 10%;
-    left: 10%;
+    right: 0;
+    left: 0;
     width: auto;
     height: 1px;
     background-color: var(--brand-cream);
@@ -443,5 +498,12 @@ body img {
   .song-container-header-p {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-navigation-ul {
+    flex-direction: column;
+    align-items: center;
   }
 }

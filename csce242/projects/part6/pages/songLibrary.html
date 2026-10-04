@@ -45,12 +45,22 @@
   <!--search bar-->
   <section id="search-bar-section">
     <div id="search-bar-container">
-      <img id="menu-img" src="../images/hamburger-menu.png">
       <div id="search-bar-div">
         <img src="../images/eyeglass.png">
-        <input type="search" id="search-bar-input" placeholder="Search by song name">
-        <button id="search-bar-button" class="uppercase">Search <img src="../images/arrow-right-indigo-deep.png">
+        <input type="search" id="search-bar-input" placeholder="Search songs by name, technique, or genre">
+        <button id="search-bar-button" class="uppercase">Search<img src="../images/arrow-right-indigo-deep.png">
         </button>
+      </div>
+      <p id="search-in-p">
+        Search in: <span class="selected">All</span> <span class="unselected">Song name</span>
+        <span class="unselected">Technqiues</span> <span class="unselected">Genres</span>
+      </p>
+      <div id="active-filters-div">Must include:
+        <p><span>Genre:</span>Top Songs<img src="../images/x-white.png"></p>
+        <p><span>Technique:</span>Bends<img src="../images/x-white.png"></p>
+        <p><span>Song:</span>The Thrill is Gone<img src="../images/x-white.png"></p>
+        <img src="../images/plus-white.png">
+        <span id="clear-all-span">clear all</span>
       </div>
     </div>
   </section>
