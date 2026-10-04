@@ -15,6 +15,10 @@
 body {
   margin: 0;
   background-color: var(--brand-indigo);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 body img {
@@ -221,6 +225,12 @@ body img {
 
 /*song section*/
 
+#song-section {
+  box-sizing: border-box;
+  padding-block: 25px;
+  border-bottom: 3px solid var(--brand-orange);
+}
+
 .song-container {
   box-sizing: border-box;
   background-color: var(--brand-indigo-deep);
@@ -228,7 +238,6 @@ body img {
   width: 100%;
   max-width: 1300px;
   padding: 18px 20px 60px 20px;
-  margin-top: 30px;
   border-radius: 18px;
 
 }
@@ -380,6 +389,97 @@ body img {
   padding-left: 8px;
 }
 
+/* footer */
+
+#main-footer-section {
+  box-sizing: border-box;
+  background-color: var(--brand-deepest-indigo);
+  padding: 25px 20px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+#footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+  max-width: 2000px;
+}
+
+#footer-top-section {
+  width: 100%;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+#footer-top-section::after {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  width: auto;
+  background-color: var(--brand-cream);
+
+}
+
+#footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#footer-logo img {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+#website-name-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding-left: 10px;
+}
+
+#website-name-footer h1 {
+  font-family: var(--jua-font);
+  color: var(--brand-orange);
+  font-size: clamp(0.95rem, 6.3vw, 1.5rem);
+  font-weight: 500;
+  margin: 0;
+}
+
+#website-name-footer h2 {
+  font-family: var(--jua-font);
+  color: var(--brand-cream);
+  font-weight: 500;
+  font-size: clamp(0.7rem, 4.7vw, 1.125rem);
+  margin: 0;
+  margin-right: auto;
+}
+
+#footer-p {
+  font-family: var(--inter-font);
+  font-size: 15px;
+  color: var(--brand-cream);
+  line-height: 2;
+  max-width: 380px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#footer-copywrite {
+  font-family: var(--inter-font);
+  font-size: 15px;
+  color: var(--brand-cream);
+  margin-bottom: 0;
+}
+
+
 /* styles and classes */
 
 #main-navigation a.selected-page {
@@ -420,7 +520,7 @@ body img {
   }
 
   #website-name h2 {
-    margin-left: auto;
+    margin-right: auto;
   }
 
   #head-right::after {
