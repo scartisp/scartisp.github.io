@@ -5,6 +5,11 @@ document.getElementById('toggle-nav-img').addEventListener('click', () => {
   navUl.classList.toggle('is-active');
 });
 
+//filter options
+document.getElementById('filter-section').addEventListener('change', e => {
+  e.target.closest('.filter-option-p').classList.toggle('filter-option-p-selected', e.target.checked);
+})
+
 //contact form
 const contactForm = document.getElementById('contact-form');
 
