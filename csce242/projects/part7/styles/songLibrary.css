@@ -266,12 +266,17 @@ body img {
 }
 
 .song-card-grid-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-self: center;
+  --columns: 3;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 300px));
   justify-content: center;
   gap: 50px;
   margin-top: 42px;
+}
+
+/*keep only the first column on collapse*/
+.collapsed .song-card-div:nth-child(n + 4) {
+  display: none;
 }
 
 .song-card-div {
@@ -300,9 +305,15 @@ body img {
 }
 
 .song-card-img {
-  max-width: 300px;
-  max-height: 190px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 300 / 190;
+  object-fit: cover;
   border-radius: 14px 14px 0 0;
+}
+
+.song-container-expand-list-span {
+  cursor: pointer;
 }
 
 .song-card-title-div {
@@ -597,6 +608,12 @@ body img {
   }
 }
 
+@media (max-width: 1045px) {
+  .song-card-grid-div {
+    --columns: 2;
+  }
+}
+
 @media (max-width: 1020px) {
   #main-navigation ul {
     justify-content: center;
@@ -621,6 +638,12 @@ body img {
     align-items: center;
     justify-content: space-between;
     margin-top: 5px;
+  }
+
+  @media (max-width: 695px) {
+    .song-card-grid-div {
+      --columns: 1;
+    }
   }
 
   #main-head-container:has(.toggle-nav-click)::after {
