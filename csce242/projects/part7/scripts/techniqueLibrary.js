@@ -6,9 +6,21 @@ document.getElementById('toggle-nav-img').addEventListener('click', () => {
 });
 
 //filter options
-document.getElementById('filter-section').addEventListener('change', e => {
+const filterSection = document.getElementById('filter-section');
+
+filterSection.addEventListener('change', e => {
   e.target.closest('.filter-option-p').classList.toggle('filter-option-p-selected', e.target.checked);
-})
+});
+
+filterSection.addEventListener('click', e => {
+  if (!e.target.classList.contains('filter-clear-span'))
+    return;
+  
+  e.target.closest('.filter-type-div').querySelectorAll('.filter-option-p').forEach(option => {
+    option.classList.remove('filter-option-p-selected');
+    option.querySelector('.filter-checkbox').checked = false;
+  });
+});
 
 //contact form
 const contactForm = document.getElementById('contact-form');
