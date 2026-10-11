@@ -7,7 +7,7 @@ document.getElementById('toggle-nav-img').addEventListener('click', () => {
   navUl.classList.toggle('is-active');
 });
 
-//top songs
+//songs
 const getSongs = async () => {
   const url = `${baseUrl}songs.json`;
   const response = await fetch(url);
@@ -74,6 +74,10 @@ const createSongHTML = song => {
 };
 
 showSongs();
+document.querySelector('.song-container-expand-list-span').addEventListener('click', () => {
+  document.querySelector('.song-card-grid-div').classList.toggle('collapsed');
+})
+
 
 //contact form
 const contactForm = document.getElementById('contact-form');
