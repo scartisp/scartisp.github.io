@@ -51,9 +51,8 @@ document.getElementById('contact-p').addEventListener('click', () => {
   contactForm.classList.toggle('display-none');
   contactForm.classList.toggle('display-flex');
 });
-
+//create a timer, wrap it in a promise
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 contactForm.onsubmit = async e => {
   e.preventDefault();
 

@@ -153,7 +153,20 @@
         <p id="footer-p">Practice with purpose. Build schedules, learn songs, and sharpen technique alongside a
           community of guitarists</p>
       </div>
-      <p id="footer-copywrite">&copy; 2026 Harmonia Guitars</p>
+      <div id="footer-last-div">
+        <p id="footer-copywrite">&copy; 2026 Harmonia Guitars</p>
+        <p id="contact-p">Contact</p>
+        <form class="display-none" id="contact-form" action="" method="POST">
+          <label class="form-field" for='name'>Name</label>
+          <input id='name' class="form-field" type="text" name="name" placeholder='Your Name' required />
+          <label class="form-field" for='email'>Email</label>
+          <input id='email' class="form-field" type="email" name="email" placeholder='Your Email' required />
+          <label class="form-field" for='message'>Message</label>
+          <textarea id='message' class="form-field" name="message" placeholder='Your Message' required></textarea>
+          <button id='form-send-button' class="form-field" type="submit">Send</button>
+          <p id="form-result" class="form-field"></p>
+        </form>
+      </div>
     </div>
   </footer>
 

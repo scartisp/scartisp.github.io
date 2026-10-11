@@ -476,11 +476,6 @@ body img {
 }
 
 /* goal-section */
-/* #goal-div {
-  box-sizing: border-box;
-  background-color: var(--brand-deepest-indigo);
-  padding: 18px 20px;
-} */
 
 #goal-div {
   display: flex;
@@ -591,7 +586,6 @@ body img {
   height: 1px;
   width: auto;
   background-color: var(--brand-cream);
-
 }
 
 #footer-logo {
@@ -647,6 +641,49 @@ body img {
   margin-bottom: 0;
 }
 
+#contact-p {
+  font-family: var(--inter-font);
+  font-size: 15px;
+  color: var(--brand-cream);
+  margin-bottom: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#contact-form {
+  flex-direction: column;
+  max-width: 300px;
+}
+
+#contact-form label {
+  color: var(--brand-cream);
+}
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 5px;
+}
+
+#form-send-button {
+  color: var(--brand-indigo-deep);
+  width: fit-content;
+  padding: 7px;
+  margin-bottom: 5px;
+  background-color: var(--brand-orange);
+  border: transparent;
+  border-radius: 6px;
+}
+
+#form-result {
+  color: var(--brand-cream);
+  margin: 0;
+}
+
+.form-field {
+  font-family: var(--inter-font);
+  font-size: 15px;
+}
+
 /* styles and classes */
 
 #main-navigation a.selected-page {
@@ -668,6 +705,14 @@ body img {
   align-self: center;
   width: 100%;
   padding-inline: 60px;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
 }
 
 /* responsive design */
