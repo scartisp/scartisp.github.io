@@ -31,7 +31,7 @@ body img {
 #main-head {
   box-sizing: border-box;
   border-bottom: 3px solid var(--brand-orange);
-  padding: 25px 20px;
+  padding: 25px 30px;
 }
 
 #main-head-container {
@@ -557,7 +557,7 @@ body img {
 #main-footer-section {
   box-sizing: border-box;
   background-color: var(--brand-deepest-indigo);
-  padding: 25px 20px;
+  padding: 25px 30px;
   width: 100%;
   flex-grow: 1;
 }
