@@ -73,6 +73,7 @@ h2 {
   font-size: 3.5rem;
   color: rgb(234, 102, 14);
 }
+
 h3 {
   margin: 0;
   padding: 18px 0;
@@ -80,7 +81,7 @@ h3 {
 
 p {
   font-family: "IBM Plex Sans Hebrew", sans-serif;
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
 .section-div {
@@ -127,6 +128,25 @@ p {
   list-style-position: inside;
 }
 
+#final-card h3 {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 240);
+}
+
+#final-card p:first-of-type{
+  padding-top: 10px;
+}
+
+#final-card p {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  gap: 15px;
+  padding: 0;
+}
+
 a {
   /*ensure links have same size and font as p elements*/
   font-family: "IBM Plex Sans Hebrew", sans-serif;
@@ -148,7 +168,7 @@ a:hover {
 
 @media (max-width: 1000px) {
   .rows {
-      display: flex;
+    display: flex;
     flex-direction: column;
   }
 
